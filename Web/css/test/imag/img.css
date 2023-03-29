@@ -1,0 +1,62 @@
+.box{
+    position:relative;
+    overflow:hidden; 
+    width:940px;
+    height:100%;
+    margin:0 auto;     
+}
+        /* 箭头 */
+span{
+    position:absolute;
+    width:50px;
+    height:100px;
+    background:black;
+    color:#fff;
+    text-align:center;
+    line-height:100px;
+    cursor: pointer;
+}
+#lf{
+    left:0;
+    top:50%;
+}
+#rt{
+    right:0;
+    top:50%;
+}
+/* 圆点 */
+#cir{
+    position:absolute;
+    bottom:20px;
+    right:100px;
+    width:100px;
+    height:20px;
+}
+.cir_items{
+    width:20px;
+    height:20px;
+    border-radius:10px;
+    background:#fff;
+    float: left;
+    margin-right:10px;
+    cursor: pointer;
+}
+#pic{
+    width:2820px;
+    height: 500px;
+}
+.pic_items{
+    width:940px;
+    height:100%;
+    float:left;
+}
+.pic_items:nth-child(1){
+    background:pink;
+}
+.pic_items:nth-child(2){
+    background: gray;
+}
+.pic_items:nth-child(3){
+    background:green;
+}
+
