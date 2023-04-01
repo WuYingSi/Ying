@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>images</title>
+
+        <link rel="stylesheet" type="text/css" href="../css/imag/img.css" />
+    </head>
+    <body>
+        <div class="box">
+            <!-- 图片 -->
+            <ul id="pic">
+                <li class="pic_items">1</li>
+                <li class="pic_items">2</li>
+                <li class="pic_items">3</li>
+            </ul>
+            <!-- 左右箭头 -->
+            <span id="lf">左</span>
+            <span id="rt">右</span>
+            <!-- 圆点 -->
+            <ul id="cir">
+                <li class="cir_items"></li>
+                <li class="cir_items"></li>
+                <li class="cir_items"></li>
+            </ul>
+        </div> 
+        <script>
+                    // 获取图片id
+        var pic = document.getElementById('pic');
+        var picItems = document.getElementsByClassName('pic_items');
+        // 获取左右箭头id
+        var lf = document.getElementById('lf');
+        var rt = document.getElementById('rt');
+        // 获取圆点
+        var cirItems = document.getElementsByClassName('cir_items');
+        // 索引
+        var index = 0;
+        var timer;
+        // 实现移动功能的函数
+        function change(i){
+            index = i;    
+            if(i > picItems.length-1){
+                index = 0;
+            }
+            if(i < 0){
+                index = picItems.length - 1;
+            }
+            clearTimeout(timer);
+            pic.style.marginLeft = -index*940+"px";
+            timer = setTimeout(function(){change(++index);},2000);
+        }
+
+
+        // 左切换
+        lf.onclick = function(){
+            change(--index);
+        }
+        // 右切换
+        rt.onclick = function(){
+            change(++index); 
+        } 
+        // 圆点切换:let的作用域是整个代码块,因此可避免使用闭包
+        for(let i=0;i<cirItems.length;i++){
+            cirItems[i].onclick = function(){
+                index = i;
+                change(index);
+            }
+        }
+
+        </script>   
+    </body>
+</html>
