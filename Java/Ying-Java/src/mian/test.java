@@ -1,4 +1,4 @@
-package base;
+package mian;
 
 public class test {
     public static void main(String[] args) {
