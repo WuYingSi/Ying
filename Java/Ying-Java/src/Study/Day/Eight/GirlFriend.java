@@ -1,4 +1,4 @@
-package base.ying.day.Eight;
+package Study.Day.Eight;
 
 public class GirlFriend {
     //属性
