@@ -1,4 +1,4 @@
-package base.ying.day.Ten;
+package Study.Day.Ten;
 
 import java.util.Scanner;
 
@@ -24,5 +24,7 @@ public class test {
 
     Scanner sb =new Scanner(System.in);
     String str = sb.next();
+
+
   }
 }
