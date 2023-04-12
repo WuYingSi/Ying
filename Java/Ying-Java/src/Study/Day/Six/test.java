@@ -1,6 +1,6 @@
-package base.ying.day;
+package Study.Day.Six;
 
-public class six {
+public class test {
   public static void main(String[] args) {
     // 定义一个数组
     int arr[] = {1, 6, 7, 46, 13, 79, 63, 120, 12};
