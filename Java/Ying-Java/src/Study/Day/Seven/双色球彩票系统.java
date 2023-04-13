@@ -1,4 +1,4 @@
-package base.ying.day.Seven;
+package Study.Day.Seven;
 
 import java.util.Random;
 import java.util.Scanner;
