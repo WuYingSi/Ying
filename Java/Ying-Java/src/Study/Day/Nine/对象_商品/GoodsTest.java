@@ -1,4 +1,4 @@
-package base.ying.day.Nine.对象_商品;
+package Study.Day.Nine.对象_商品;
 
 /*定义数组存储3个商品对象。
  *商品的属性：商品的id，名字，价格，库存。
