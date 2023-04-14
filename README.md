@@ -11,7 +11,6 @@
 
 ​	（https://www.bilibili.com/video/BV17F411T7Ao/?spm_id_from=333.999.0.0&vd_source=3d56dad162e8fc3cdbea78660b25de2b)
 
-  课程名字：
 
 ## Web前端
 
