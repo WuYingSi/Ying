@@ -1,3 +1,8 @@
+/* 全局配置 */
+body {
+    margin: 0 auto;
+}
+
 /* 头部开始 */
 .head {
     width: 1480px;
@@ -12,23 +17,23 @@
 }
 
 .head-left-img {
-    margin-top: 31px;
+    margin-top: 20px;
 }
 
 .head-left-img img {
-    width: 150px;
-    height: 100px;
-    margin-top: 0px;
+    width: 204px;
+    height: 52px;
+    margin-top: 30px;
 }
 
 .head-input {
     width: 532px;
     margin: 0 100px;
-    margin-top: 31px;
+    margin-top: 40px;
 }
 
 .bao {
-    background-color: #0c36b7;
+    background-color: #f36;
     width: 54px;
     height: 24px;
     font-size: 12px;
@@ -55,10 +60,20 @@
     outline: none;
 }
 
+/* 搜索框 */
+.inputs {
+    width: 460px;
+    height: 30px;
+    border-color: white;
+    border: 2px solid #f36;
+    box-sizing: border-box;
+    outline: none;
+}
+
 .search {
     height: 30px;
     width: 72px;
-    background-color: #0c36b7;
+    background-color: #f36;
 }
 
 .search img {
@@ -74,6 +89,7 @@
     font-size: 12px;
     padding-top: 12px;
     margin-right: 5px;
+    margin-right: 10px;
 }
 
 .red {
@@ -92,7 +108,6 @@
     border-bottom: 1px solid #dedede;
     margin: 0 auto;
     padding-top: 30px;
-    background-color: white;
 }
 
 .nav ul {
@@ -104,33 +119,28 @@
 .nav ul li {
     float: left;
     width: 100px;
-    font-weight: bolder;
+    font-weight: bold;
 
-}
-
-.nav ul li a:hover {
-    color: #0c36b7;
-    border-bottom: 1px solid #0c36b7;
-}
-
-.nav ul li a {
-    padding-bottom: 12px;
 }
 
 a:link {
     color: #444;
 }
 
-.nav ul li:nth-child(1) a {
-    color: #0c36b7;
-    border-bottom: 2px solid #0c36b7;
+.nav ul li a:hover {
+    color: #f36;
+    border-bottom: 2px solid #f36;
 }
 
-/* 搜索框 */
-.inputs {
-    width: 380px;
-    height: 28px;
-    border-color: white;
+.nav ul li a {
+    padding-bottom: 12px;
+}
+
+
+
+.nav ul li:nth-child(1) a {
+    color: #f36;
+    border-bottom: 2px solid #f36;
 }
 
 /* 导航栏结束 */
@@ -140,7 +150,7 @@ a:link {
     width: 1480px;
     height: 400px;
     margin: 0 auto;
-    margin-top: 18px
+    margin-top: 15px
 }
 
 .box {
@@ -209,37 +219,162 @@ a:link {
 }
 
 .box ol li.boxred {
-    background-color: #0c36b7;
+    background-color: #f36;
 }
 
 /* 轮播图结束 */
 /* 四卡片开始 */
 .card {
     width: 1480px;
-    height: 380px;
+    height: 170px;
     margin: 0 auto;
-    margin-top: 18px;
+    /* margin-top: 18px; */
 }
 
 .four-card {
     width: 1200px;
-    height: 340px;
+    height: 200px;
     margin: 0 auto;
-    float: left;
+    /* float: left; */
 }
 
 .card-list {
-    float: left;
+    margin-top: 20px;
 }
 
-.card img {}
+.card-list img {
+    width: 300px;
+}
 
 /* 四卡片结束 */
 /* 十卡片 */
+.new {
+    width: 1480px;
+    height: 870px;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+
+.newcard {
+    width: 1200px;
+    height: 870px;
+    margin: 20px auto;
+}
+
+.newcard-top {
+    width: 1200px;
+    height: 30px;
+    margin: 0 auto;
+}
+
+.two {
+    margin: 20px auto;
+    width: 200px;
+    height: 26px;
+}
+
+.two1 span {
+    padding-bottom: 10px;
+}
+
+.two1 {
+    font-size: 20px;
+}
+
+.two1:nth-child(1) {
+    color: #f36;
+}
+
+.two1:nth-child(1) span {
+    border-bottom: 3px solid #f36;
+}
+
+.two1:hover {
+    color: #f36;
+}
+
+.two1 span:hover {
+    border-bottom: 3px solid #f36;
+}
+
+.more {
+    font-size: 14px;
+    margin-top: -34px;
+}
+
+.newcard-lists {
+    width: 1200px;
+    height: 800px;
+    display: block;
+}
+
+.new-none {
+    display: none;
+}
+
+.newcard-list {
+    width: 224px;
+    height: 400px;
+    margin-right: 20px;
+}
+
 .newcard-list:nth-child(5n) {
     margin-right: 0px;
 }
 
+.newcard-list-img img {
+    width: 224px;
+    height: 340px;
+}
+
+.number {
+    width: 224px;
+    height: 20px;
+    margin: 5px 0px;
+}
+
+.number-left {
+    color: #f36;
+}
+
+.number-right {
+    width: 45px;
+    height: 20px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #99b5b7;
+}
+
+.number-right img {
+    width: 14px;
+    height: 14px;
+    vertical-align: middle;
+    margin-bottom: 3px;
+    margin-right: 5px;
+}
+
+.title {
+    width: 224px;
+    height: 20px;
+}
+
+.title-left img {
+    width: 40px;
+    height: 18px;
+}
+
+.title-right {
+    width: 180px;
+    height: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 14px;
+    line-height: 24px;
+    color: #666;
+}
+
+/* 十卡片结束 */
 /* 图片大小效果 */
 .newcard-list-img img {
     width: 244px;
