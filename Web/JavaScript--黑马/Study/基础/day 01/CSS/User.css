@@ -1,0 +1,28 @@
+/* 效果文字居中 */
+h2 {
+    text-align: center;
+}
+
+/* 表单 */
+table {
+    /* 边框合并 */
+    border-collapse: collapse;
+    margin: 0 auto;
+    height: 80px;
+    text-align: center;
+}
+
+/* 表单边框 */
+table,
+td,
+th {
+    border: 1px solid black;
+    /* 单元格高度 */
+
+}
+
+
+/* 单元格 */
+th {
+    padding: 7px 30px;
+}
