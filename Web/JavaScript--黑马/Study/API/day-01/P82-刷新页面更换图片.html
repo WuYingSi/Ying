@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>刷新页面更换图片</title>
+</head>
+
+<body>
+    <img src="" alt="">
+    <script>
+        const r = Math.floor(Math.random() * 7)
+        const img = document.querySelector('img')
+        img.src = `./img/P82/${r}.webp`
+        img.title = `这是第${r}张图片`
+        img.width = '400px'
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>猜数字游戏</title>
+</head>
+
+<body>
+    <script>
+        // 随机生成1~10的数字
+        function getRandom(N = 0, M = 0) {
+            return Math.floor(Math.random() * (M - N + 1)) + N
+        }
+        // 正确的数字
+        let random = getRandom(1, 10)
+        // 循环猜测数字
+        while (true) {
+            // 猜的数字
+            let num = +prompt('请输入数字')
+            if (num > random) {
+                alert('你猜的数字偏大')
+            } else if (num < random) {
+                alert('你猜的数字偏小')
+            } else {
+                // 猜对了跳出循环
+                alert('感谢您猜对了')
+                break
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>生成随机颜色</title>
+</head>
+
+<body>
+    <div style="border-width: 100px;">
+
+    </div>
+
+    <script>
+        // 需求：该函数接收一个布尔类型参数，表示颜色的格式是十六进制还是rgb格式。
+        // ①：如果参数传递的是true或者无参数，则输出 一个随机十六进制的颜色
+        // ②：如果参数传递的是false，则输出 一个随机rgb的颜色
+        // ③：格式：
+        // function getRandomColor(flag){
+        // }
+        // console.log(getRandomColor(true)) //#ffffff
+        // console.log(getRandomColor(false)) //rgb(255,255,255)
+
+        // 接收布尔类型 true 返回十六进制颜色 falese 返回rgb格式颜色
+        function getRandomColor(flag = true) {
+            if (flag) {
+                // 返回十六进制颜色
+                let arr = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f']
+                // 存放十六进制颜色的字符串
+                let colorStr = ''
+                // 随机索引 用来提取数组内的元素
+                for (let i = 0; i < 6; i++) {
+                    let r = Math.floor(Math.random() * arr.length)
+                    colorStr = colorStr + arr[r]
+                }
+                return `#${colorStr}`
+            } else {
+                // 返回rgb格式
+                // 随机取0~255的数字
+                let r = Math.floor(Math.random() * 256)
+                let g = Math.floor(Math.random() * 256)
+                let b = Math.floor(Math.random() * 256)
+                return `rgb(${r},${g},${b})`
+            }
+        }
+        // 调用函数
+        let color = getRandomColor(true)
+        // 使用
+        document.write(`
+            <div style="background-color: ${color};width: 100px; height: 100px;">
+
+            </div>
+        `)
+    </script>
+</body>
+
+</html>

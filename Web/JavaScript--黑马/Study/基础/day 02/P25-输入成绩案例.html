@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>输入成绩</title>
+</head>
+
+<body>
+    <script>
+        // 需求：根据输入不同的成绩，反馈不同的评价
+        // 注：
+        // ①：成绩90以上是 优秀
+        // ②：成绩70~90是 良好
+        // ③：成绩是60~70之间是 及格
+        // ④：成绩60分以下是 不及格
+        let grade = +prompt('请输入您的成绩：')
+        if (grade >= 0 && grade < 100) {
+            if (grade >= 90) {
+                alert('优秀')
+            } else if (70 <= grade && grade < 90) {
+                alert('良好')
+            } else if (60 <= grade && grade < 70) {
+                alert('及格')
+            } else if (grade < 60) {
+                alert('不及格')
+            }
+        } else {
+            alert('输入的成绩错误，请重新输入')
+        }
+    </script>
+</body>
+
+</html>
