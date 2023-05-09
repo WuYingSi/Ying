@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .box {
+            width: 600px;
+            margin: 50px auto;
+            display: flex;
+            font-size: 25px;
+            line-height: 40px;
+        }
+
+        .qs {
+
+            width: 450px;
+            height: 40px;
+            color: red;
+
+        }
+
+        .btns {
+            text-align: center;
+        }
+
+        .btns button {
+            width: 120px;
+            height: 35px;
+            margin: 0 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>随机点名</h2>
+    <div class="box">
+        <span>名字是：</span>
+        <div class="qs">点击开始按钮</div>
+    </div>
+    <div class="btns">
+        <button class="start">开始</button>
+        <button class="end">结束</button>
+    </div>
+
+    <script>
+        // 数据数组
+        const arr = ['马超', '黄忠', '赵云', '关羽', '张飞']
+        // 获取元素
+        const start = document.querySelector('.start')// 开始按钮
+        const end = document.querySelector('.end')// 结束按钮
+        const p = document.querySelector('.qs')// 文本元素
+        let idNum = 0// 存放定时器id
+        let r = 0// 存放随机值
+        // 定时器
+        start.addEventListener('click', function () {
+            idNum = setInterval(function () {
+                r = Math.floor(Math.random() * arr.length)
+                p.innerHTML = `${arr[r]}`
+            }, 10)
+            // 数组内只剩下一个元素 禁用两个按钮
+            if (arr.length <= 1) {
+                // start.disabled = true
+                // end.disabled = true
+                start.disabled = end.disabled = true
+            }
+        })
+        end.addEventListener('click', function () {
+            clearInterval(idNum)
+            arr.splice(r, 1)// 删除数组中已经抽取到的元素
+        })
+
+    </script>
+</body>
+
+</html>
