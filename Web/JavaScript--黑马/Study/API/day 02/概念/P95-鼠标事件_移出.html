@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mouseleave 监听鼠标是否移出 DOM 元素</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>鼠标事件</h3>
+    <p>监听与鼠标相关的操作</p>
+    <hr>
+    <div class="box"></div>
+    <script>
+        // 需要事件监听的 DOM 元素
+        const box = document.querySelector('.box');
+
+        // 监听鼠标是移出当前 DOM 元素
+        box.addEventListener('mouseleave', function () {
+            // 修改文本内容
+            this.innerText = '鼠标移出了...';
+        })
+    </script>
+</body>
+
+</html>
