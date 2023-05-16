@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text">
+    <hr>
+    <p>发生判定中..</p>
+    <script>
+        const p = document.querySelector('p')
+        const input = document.querySelector('input')
+        // 得到焦点
+        input.addEventListener('focus', function () {
+            p.innerHTML = '焦点事件被触发'
+        })
+        // 失去焦点
+        input.addEventListener('blur', function () {
+            p.innerHTML = '失去焦点事件被触发'
+        })
+    </script>
+</body>
+
+</html>
