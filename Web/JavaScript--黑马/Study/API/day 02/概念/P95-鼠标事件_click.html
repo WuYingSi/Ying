@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button>点击</button>
+    <br>
+    <p class="text">等待事件被触发...</p>
+    <script>
+        // 双击事件类型
+        const btn = document.querySelector('button')
+        btn.addEventListener('dblclick', function () {
+            console.log('等待事件被触发...');
+            // 改变 p 标签的文字颜色
+            const text = document.querySelector('.text')
+            text.style.color = 'red'
+        })
+
+        // 只要用户双击击了按钮，事件便触发了！！！
+    </script>
+</body>
+
+</html>
