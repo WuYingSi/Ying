@@ -15,6 +15,7 @@
             width: 560px;
             height: 400px;
             overflow: hidden;
+            margin: 0 auto;
         }
 
         .slider-wrapper {
@@ -87,6 +88,7 @@
             width: 12px;
             height: 12px;
             opacity: 1;
+            display: none;
         }
     </style>
 </head>
@@ -132,66 +134,71 @@
         const img = document.querySelector('.slider-wrapper img')// 图片
         const p = document.querySelector('.slider-footer p')// 标题
         const color = document.querySelector('.slider-footer')// 背景颜色
-
-        let i = 0
-        // 定时器
-        let idTime = setInterval(function () {
-            i++
-            // 重置
-            if (i >= sliderData.length) {
-                i = 0
-            }
+        // 方法：轮播图切换
+        function switchover() {
             // 图片切换
             img.src = sliderData[i].url
             // 标题切换
             p.innerHTML = sliderData[i].title
             // 标题背景颜色
             color.style.backgroundColor = sliderData[i].color
-            // 小圆点切换
-            // 删除前一个小圆点的样式 选择第一个li具有active样式的元素进行删除操作
-            document.querySelector('.active').classList.remove('active')
-            // 给所选的小圆点添加样式
-            document.querySelector(`.slider-indicator li:nth-child(${i + 1})`).classList.add('active')
-        }, 1000)
+            // 小圆点切换 先选择li里面已经具有active样式的对象进行移除，再添加active样式给新的li
+            document.querySelector('.slider-indicator .active').classList.remove('active')// 移除小圆点
+            document.querySelector(`.slider-indicator li:nth-child(${i + 1})`).classList.add('active')// 添加新的小圆点  
+        }
+        let i = 0// 索引号
+        let idTime = 0// 定时器id数
+        // 方法：重复切换轮播图 定时器 
+        function Time() {
+            return setInterval(function () {
+                right.click()//js自动调用点击事件
+                // i++
+                // // 重置
+                // if (i >= sliderData.length) {
+                //     i = 0
+                // }
+                // switchover()
+            }, 1000)
+        }
+        idTime = Time() // 调用定时器默认切换
         // 获取元素对象
         const left = document.querySelector('.prev')// 左箭头
         const right = document.querySelector('.next')// 右箭头
-        //
+        // 左箭头
+        // 点击
         left.addEventListener('click', function () {
-
-            img.src = sliderData[i - 1].url
-            p.innerHTML = sliderData[i - 1].title
-            color.style.backgroundColor = sliderData[i - 1].color
-            document.querySelector('.active').classList.remove('active')
-            document.querySelector(`.slider-indicator li:nth-child(${i})`).classList.add('active')
+            // 切换当前面一级的所有元素
             i--
-            i = i < 0 ? data.length - 1 : i
+            // 判断 小于0 切换到最后一张图片索引号为sliderData.length - 1
+            i = i < 0 ? sliderData.length - 1 : i
+            switchover()
         })
-        left.addEventListener('mouseenter', function () {
+        // 右箭头
+        // 点击
+        right.addEventListener('click', function () {
+            i++
+            // 判断
+            i = i >= sliderData.length ? 0 : i
+            switchover()
+        })
+
+        // 获取最外层的盒子
+        const div = document.querySelector('.slider')
+        // 鼠标经过盒子暂停定时器，离开开启定时器
+        // 鼠标经过
+        div.addEventListener('mouseenter', function () {
+            // 停止定时器
             clearInterval(idTime)
         })
-        left.addEventListener('mouseleave', function () {
-            idTime = setInterval(function () {
-                i++
-                // 重置
-                if (i >= sliderData.length) {
-                    i = 0
-                }
-                // 图片切换
-                img.src = sliderData[i].url
-                // 标题切换
-                p.innerHTML = sliderData[i].title
-                // 标题背景颜色
-                color.style.backgroundColor = sliderData[i].color
-                // 小圆点切换
-                // 删除前一个小圆点的样式 选择第一个li具有active样式的元素进行删除操作
-                document.querySelector('.active').classList.remove('active')
-                // 给所选的小圆点添加样式
-                document.querySelector(`.slider-indicator li:nth-child(${i + 1})`).classList.add('active')
-            }, 1000)
+        // 鼠标离开
+        div.addEventListener('mouseleave', function () {
+            // 开启定时器
+            idTime = Time()
         })
-        right.addEventListener
-
+        // ci.addEventListener('click', function () {
+        //     // 停止定时器
+        //     clearInterval(idTime)
+        // })
     </script>
 </body>
 
