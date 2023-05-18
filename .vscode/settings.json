@@ -1,3 +1,5 @@
 {
-    "vue.features.codeActions.enable": false
+    "vue.features.codeActions.enable": false,
+    "editor.bracketPairColorization.enabled": true,
+    "editor.guides.bracketPairs": "active"
 }

@@ -1,0 +1,557 @@
+<!--美丽开始-->
+<div class="good">
+    <div class="good-card">
+        <div class="good-card-title clearfix">
+            <div class="title-left fl">美丽优选</div>
+            <div class="title-right fr">春季新款突袭买买买</div>
+        </div>
+    </div>
+    <div class="newcard-lists clearfix">
+        <div class="newcard-list fl">
+            <div class="newcard-list-img">
+                <img src="images/goods01.png" alt="">
+            </div>
+            <div class="number clearfix">
+                <div class="number-left fl">&yen;&nbsp;8.8</div>
+                <div class="number-right fr">
+                    <img src="images/wjx.png" alt="">222
+                </div>
+            </div>
+            <div class="title">
+                <div class="title-left fl"><img src="images/youxuan.png" alt=""></div>
+                <div class="title-right fr">
+                    新款韩版气质显瘦收腰百搭连衣裙
+                </div>
+
+            </div>
+        </div>
+        <div class="newcard-list fl">
+            <div class="newcard-list-img">
+                <img src="images/goods02.png" alt="">
+            </div>
+            <div class="number clearfix">
+                <div class="number-left fl">&yen;&nbsp;9.9</div>
+                <div class="number-right fr">
+                    <img src="images/wjx.png" alt="">222
+                </div>
+            </div>
+            <div class="title">
+                <div class="title-left fl"><img src="images/youxuan.png" alt=""></div>
+                <div class="title-right fr">
+                    新款韩版气质显瘦收腰百搭连衣裙
+                </div>
+
+            </div>
+        </div>
+        <div class="newcard-list fl">
+            <div class="newcard-list-img">
+                <img src="images/goods03.png" alt="">
+            </div>
+            <div class="number clearfix">
+                <div class="number-left fl">&yen;&nbsp;18.88</div>
+                <div class="number-right fr">
+                    <img src="images/wjx.png" alt="">221
+                </div>
+            </div>
+            <div class="title">
+                <div class="title-left fl"><img src="images/youxuan.png" alt=""></div>
+                <div class="title-right fr">
+                    新款韩版气质显瘦收腰百搭连衣裙
+                </div>
+
+            </div>
+        </div>
+        <div class="newcard-list fl">
+            <div class="newcard-list-img">
+                <img src="images/goods04.png" alt="">
+            </div>
+            <div class="number clearfix">
+                <div class="number-left fl">&yen;&nbsp;88.88</div>
+                <div class="number-right fr">
+                    <img src="images/wjx.png" alt="">223
+                </div>
+            </div>
+            <div class="title">
+                <div class="title-left fl"><img src="images/youxuan.png" alt=""></div>
+                <div class="title-right fr">
+                    新款韩版气质显瘦收腰百搭连衣裙
+                </div>
+
+            </div>
+        </div>
+        <div class="newcard-list fl">
+            <div class="newcard-list-img">
+                <img src="images/goods05.png" alt="">
+            </div>
+            <div class="number clearfix">
+                <div class="number-left fl">&yen;&nbsp;8.88</div>
+                <div class="number-right fr">
+                    <img src="images/wjx.png" alt="">224
+                </div>
+            </div>
+            <div class="title">
+                <div class="title-left fl"><img src="images/youxuan.png" alt=""></div>
+                <div class="title-right fr">
+                    新款韩版气质显瘦收腰百搭连衣裙
+                </div>
+
+            </div>
+        </div>
+        <div class="newcard-list fl">
+            <div class="newcard-list-img">
+                <img src="images/goods06.png" alt="">
+            </div>
+            <div class="number clearfix">
+                <div class="number-left fl">&yen;&nbsp;9.9</div>
+                <div class="number-right fr">
+                    <img src="images/wjx.png" alt="">225
+                </div>
+            </div>
+            <div class="title">
+                <div class="title-left fl"><img src="images/youxuan.png" alt=""></div>
+                <div class="title-right fr">
+                    新款韩版气质显瘦收腰百搭连衣裙
+                </div>
+
+            </div>
+        </div>
+        <div class="newcard-list fl">
+            <div class="newcard-list-img">
+                <img src="images/goods07.png" alt="">
+            </div>
+            <div class="number clearfix">
+                <div class="number-left fl">&yen;&nbsp;19.9</div>
+                <div class="number-right fr">
+                    <img src="images/wjx.png" alt="">226
+                </div>
+            </div>
+            <div class="title">
+                <div class="title-left fl"><img src="images/youxuan.png" alt=""></div>
+                <div class="title-right fr">
+                    新款韩版气质显瘦收腰百搭连衣裙
+                </div>
+
+            </div>
+        </div>
+        <div class="newcard-list fl">
+            <div class="newcard-list-img">
+                <img src="images/goods08.png" alt="">
+            </div>
+            <div class="number clearfix">
+                <div class="number-left fl">&yen;&nbsp;9.9</div>
+                <div class="number-right fr">
+                    <img src="images/wjx.png" alt="">227
+                </div>
+            </div>
+            <div class="title">
+                <div class="title-left fl"><img src="images/youxuan.png" alt=""></div>
+                <div class="title-right fr">
+                    新款韩版气质显瘦收腰百搭连衣裙
+                </div>
+
+            </div>
+        </div>
+        <div class="newcard-list fl">
+            <div class="newcard-list-img">
+                <img src="images/goods09.png" alt="">
+            </div>
+            <div class="number clearfix">
+                <div class="number-left fl">&yen;&nbsp;19.99</div>
+                <div class="number-right fr">
+                    <img src="images/wjx.png" alt="">228
+                </div>
+            </div>
+            <div class="title">
+                <div class="title-left fl"><img src="images/youxuan.png" alt=""></div>
+                <div class="title-right fr">
+                    新款韩版气质显瘦收腰百搭连衣裙
+                </div>
+
+            </div>
+        </div>
+        <div class="newcard-list fl">
+            <div class="newcard-list-img">
+                <img src="images/goods10.png" alt="">
+            </div>
+            <div class="number clearfix">
+                <div class="number-left fl">&yen;&nbsp;19.9</div>
+                <div class="number-right fr">
+                    <img src="images/wjx.png" alt="">229
+                </div>
+            </div>
+            <div class="title">
+                <div class="title-left fl"><img src="images/youxuan.png" alt=""></div>
+                <div class="title-right fr">
+                    新款韩版气质显瘦收腰百搭连衣裙
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="newcard-lists clearfix">
+        <div class="newcard-list fl">
+            <div class="newcard-list-img">
+                <img src="images/goods01.png" alt="">
+            </div>
+            <div class="number clearfix">
+                <div class="number-left fl">&yen;&nbsp;8.8</div>
+                <div class="number-right fr">
+                    <img src="images/wjx.png" alt="">222
+                </div>
+            </div>
+            <div class="title">
+                <div class="title-left fl"><img src="images/youxuan.png" alt=""></div>
+                <div class="title-right fr">
+                    新款韩版气质显瘦收腰百搭连衣裙
+                </div>
+
+            </div>
+        </div>
+        <div class="newcard-list fl">
+            <div class="newcard-list-img">
+                <img src="images/goods02.png" alt="">
+            </div>
+            <div class="number clearfix">
+                <div class="number-left fl">&yen;&nbsp;9.9</div>
+                <div class="number-right fr">
+                    <img src="images/wjx.png" alt="">222
+                </div>
+            </div>
+            <div class="title">
+                <div class="title-left fl"><img src="images/youxuan.png" alt=""></div>
+                <div class="title-right fr">
+                    新款韩版气质显瘦收腰百搭连衣裙
+                </div>
+
+            </div>
+        </div>
+        <div class="newcard-list fl">
+            <div class="newcard-list-img">
+                <img src="images/goods03.png" alt="">
+            </div>
+            <div class="number clearfix">
+                <div class="number-left fl">&yen;&nbsp;18.88</div>
+                <div class="number-right fr">
+                    <img src="images/wjx.png" alt="">221
+                </div>
+            </div>
+            <div class="title">
+                <div class="title-left fl"><img src="images/youxuan.png" alt=""></div>
+                <div class="title-right fr">
+                    新款韩版气质显瘦收腰百搭连衣裙
+                </div>
+
+            </div>
+        </div>
+        <div class="newcard-list fl">
+            <div class="newcard-list-img">
+                <img src="images/goods04.png" alt="">
+            </div>
+            <div class="number clearfix">
+                <div class="number-left fl">&yen;&nbsp;88.88</div>
+                <div class="number-right fr">
+                    <img src="images/wjx.png" alt="">223
+                </div>
+            </div>
+            <div class="title">
+                <div class="title-left fl"><img src="images/youxuan.png" alt=""></div>
+                <div class="title-right fr">
+                    新款韩版气质显瘦收腰百搭连衣裙
+                </div>
+
+            </div>
+        </div>
+        <div class="newcard-list fl">
+            <div class="newcard-list-img">
+                <img src="images/goods05.png" alt="">
+            </div>
+            <div class="number clearfix">
+                <div class="number-left fl">&yen;&nbsp;8.88</div>
+                <div class="number-right fr">
+                    <img src="images/wjx.png" alt="">224
+                </div>
+            </div>
+            <div class="title">
+                <div class="title-left fl"><img src="images/youxuan.png" alt=""></div>
+                <div class="title-right fr">
+                    新款韩版气质显瘦收腰百搭连衣裙
+                </div>
+
+            </div>
+        </div>
+        <div class="newcard-list fl">
+            <div class="newcard-list-img">
+                <img src="images/goods06.png" alt="">
+            </div>
+            <div class="number clearfix">
+                <div class="number-left fl">&yen;&nbsp;9.9</div>
+                <div class="number-right fr">
+                    <img src="images/wjx.png" alt="">225
+                </div>
+            </div>
+            <div class="title">
+                <div class="title-left fl"><img src="images/youxuan.png" alt=""></div>
+                <div class="title-right fr">
+                    新款韩版气质显瘦收腰百搭连衣裙
+                </div>
+
+            </div>
+        </div>
+        <div class="newcard-list fl">
+            <div class="newcard-list-img">
+                <img src="images/goods07.png" alt="">
+            </div>
+            <div class="number clearfix">
+                <div class="number-left fl">&yen;&nbsp;19.9</div>
+                <div class="number-right fr">
+                    <img src="images/wjx.png" alt="">226
+                </div>
+            </div>
+            <div class="title">
+                <div class="title-left fl"><img src="images/youxuan.png" alt=""></div>
+                <div class="title-right fr">
+                    新款韩版气质显瘦收腰百搭连衣裙
+                </div>
+
+            </div>
+        </div>
+        <div class="newcard-list fl">
+            <div class="newcard-list-img">
+                <img src="images/goods08.png" alt="">
+            </div>
+            <div class="number clearfix">
+                <div class="number-left fl">&yen;&nbsp;9.9</div>
+                <div class="number-right fr">
+                    <img src="images/wjx.png" alt="">227
+                </div>
+            </div>
+            <div class="title">
+                <div class="title-left fl"><img src="images/youxuan.png" alt=""></div>
+                <div class="title-right fr">
+                    新款韩版气质显瘦收腰百搭连衣裙
+                </div>
+
+            </div>
+        </div>
+        <div class="newcard-list fl">
+            <div class="newcard-list-img">
+                <img src="images/goods09.png" alt="">
+            </div>
+            <div class="number clearfix">
+                <div class="number-left fl">&yen;&nbsp;19.99</div>
+                <div class="number-right fr">
+                    <img src="images/wjx.png" alt="">228
+                </div>
+            </div>
+            <div class="title">
+                <div class="title-left fl"><img src="images/youxuan.png" alt=""></div>
+                <div class="title-right fr">
+                    新款韩版气质显瘦收腰百搭连衣裙
+                </div>
+
+            </div>
+        </div>
+        <div class="newcard-list fl">
+            <div class="newcard-list-img">
+                <img src="images/goods10.png" alt="">
+            </div>
+            <div class="number clearfix">
+                <div class="number-left fl">&yen;&nbsp;19.9</div>
+                <div class="number-right fr">
+                    <img src="images/wjx.png" alt="">229
+                </div>
+            </div>
+            <div class="title">
+                <div class="title-left fl"><img src="images/youxuan.png" alt=""></div>
+                <div class="title-right fr">
+                    新款韩版气质显瘦收腰百搭连衣裙
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="newcard-lists clearfix">
+        <div class="newcard-list fl">
+            <div class="newcard-list-img">
+                <img src="images/goods01.png" alt="">
+            </div>
+            <div class="number clearfix">
+                <div class="number-left fl">&yen;&nbsp;8.8</div>
+                <div class="number-right fr">
+                    <img src="images/wjx.png" alt="">222
+                </div>
+            </div>
+            <div class="title">
+                <div class="title-left fl"><img src="images/youxuan.png" alt=""></div>
+                <div class="title-right fr">
+                    新款韩版气质显瘦收腰百搭连衣裙
+                </div>
+
+            </div>
+        </div>
+        <div class="newcard-list fl">
+            <div class="newcard-list-img">
+                <img src="images/goods02.png" alt="">
+            </div>
+            <div class="number clearfix">
+                <div class="number-left fl">&yen;&nbsp;9.9</div>
+                <div class="number-right fr">
+                    <img src="images/wjx.png" alt="">222
+                </div>
+            </div>
+            <div class="title">
+                <div class="title-left fl"><img src="images/youxuan.png" alt=""></div>
+                <div class="title-right fr">
+                    新款韩版气质显瘦收腰百搭连衣裙
+                </div>
+
+            </div>
+        </div>
+        <div class="newcard-list fl">
+            <div class="newcard-list-img">
+                <img src="images/goods03.png" alt="">
+            </div>
+            <div class="number clearfix">
+                <div class="number-left fl">&yen;&nbsp;18.88</div>
+                <div class="number-right fr">
+                    <img src="images/wjx.png" alt="">221
+                </div>
+            </div>
+            <div class="title">
+                <div class="title-left fl"><img src="images/youxuan.png" alt=""></div>
+                <div class="title-right fr">
+                    新款韩版气质显瘦收腰百搭连衣裙
+                </div>
+
+            </div>
+        </div>
+        <div class="newcard-list fl">
+            <div class="newcard-list-img">
+                <img src="images/goods04.png" alt="">
+            </div>
+            <div class="number clearfix">
+                <div class="number-left fl">&yen;&nbsp;88.88</div>
+                <div class="number-right fr">
+                    <img src="images/wjx.png" alt="">223
+                </div>
+            </div>
+            <div class="title">
+                <div class="title-left fl"><img src="images/youxuan.png" alt=""></div>
+                <div class="title-right fr">
+                    新款韩版气质显瘦收腰百搭连衣裙
+                </div>
+
+            </div>
+        </div>
+        <div class="newcard-list fl">
+            <div class="newcard-list-img">
+                <img src="images/goods05.png" alt="">
+            </div>
+            <div class="number clearfix">
+                <div class="number-left fl">&yen;&nbsp;8.88</div>
+                <div class="number-right fr">
+                    <img src="images/wjx.png" alt="">224
+                </div>
+            </div>
+            <div class="title">
+                <div class="title-left fl"><img src="images/youxuan.png" alt=""></div>
+                <div class="title-right fr">
+                    新款韩版气质显瘦收腰百搭连衣裙
+                </div>
+
+            </div>
+        </div>
+        <div class="newcard-list fl">
+            <div class="newcard-list-img">
+                <img src="images/goods06.png" alt="">
+            </div>
+            <div class="number clearfix">
+                <div class="number-left fl">&yen;&nbsp;9.9</div>
+                <div class="number-right fr">
+                    <img src="images/wjx.png" alt="">225
+                </div>
+            </div>
+            <div class="title">
+                <div class="title-left fl"><img src="images/youxuan.png" alt=""></div>
+                <div class="title-right fr">
+                    新款韩版气质显瘦收腰百搭连衣裙
+                </div>
+
+            </div>
+        </div>
+        <div class="newcard-list fl">
+            <div class="newcard-list-img">
+                <img src="images/goods07.png" alt="">
+            </div>
+            <div class="number clearfix">
+                <div class="number-left fl">&yen;&nbsp;19.9</div>
+                <div class="number-right fr">
+                    <img src="images/wjx.png" alt="">226
+                </div>
+            </div>
+            <div class="title">
+                <div class="title-left fl"><img src="images/youxuan.png" alt=""></div>
+                <div class="title-right fr">
+                    新款韩版气质显瘦收腰百搭连衣裙
+                </div>
+
+            </div>
+        </div>
+        <div class="newcard-list fl">
+            <div class="newcard-list-img">
+                <img src="images/goods08.png" alt="">
+            </div>
+            <div class="number clearfix">
+                <div class="number-left fl">&yen;&nbsp;9.9</div>
+                <div class="number-right fr">
+                    <img src="images/wjx.png" alt="">227
+                </div>
+            </div>
+            <div class="title">
+                <div class="title-left fl"><img src="images/youxuan.png" alt=""></div>
+                <div class="title-right fr">
+                    新款韩版气质显瘦收腰百搭连衣裙
+                </div>
+
+            </div>
+        </div>
+        <div class="newcard-list fl">
+            <div class="newcard-list-img">
+                <img src="images/goods09.png" alt="">
+            </div>
+            <div class="number clearfix">
+                <div class="number-left fl">&yen;&nbsp;19.99</div>
+                <div class="number-right fr">
+                    <img src="images/wjx.png" alt="">228
+                </div>
+            </div>
+            <div class="title">
+                <div class="title-left fl"><img src="images/youxuan.png" alt=""></div>
+                <div class="title-right fr">
+                    新款韩版气质显瘦收腰百搭连衣裙
+                </div>
+
+            </div>
+        </div>
+        <div class="newcard-list fl">
+            <div class="newcard-list-img">
+                <img src="images/goods10.png" alt="">
+            </div>
+            <div class="number clearfix">
+                <div class="number-left fl">&yen;&nbsp;19.9</div>
+                <div class="number-right fr">
+                    <img src="images/wjx.png" alt="">229
+                </div>
+            </div>
+            <div class="title">
+                <div class="title-left fl"><img src="images/youxuan.png" alt=""></div>
+                <div class="title-right fr">
+                    新款韩版气质显瘦收腰百搭连衣裙
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="title-center">加载中...</div>
+</div>
+<!--美丽结束-->

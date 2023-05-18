@@ -1,0 +1,53 @@
+/* 初始化开始 */
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+ul li{
+    list-style: none;
+}
+ol li{
+    list-style: none;
+}
+/* 左浮动 */
+.fl{
+    float: left;
+}
+/*  右浮动 */
+.fr{
+    float: right;
+}
+/* 清除浮动影响 */
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+/* 去掉图片底部缝隙 */
+img{
+    vertical-align: bottom;
+}
+.auto-img{
+    width: 100%;
+    display: block;
+}
+
+@font-face {font-family: "iconfont";
+    src: url('iconfont.eot?t=1498560985596'); /* IE9*/
+    src: url('iconfont.eot?t=1498560985596#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('iconfont.woff?t=1498560985596') format('woff'), /* chrome, firefox */
+    url('iconfont.ttf?t=1498560985596') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+    url('iconfont.svg?t=1498560985596#iconfont') format('svg'); /* iOS 4.1- */
+  }
+  
+  .iconfont {
+    font-family:"iconfont" !important;
+    font-size:16px;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  /* 初始化结束 */

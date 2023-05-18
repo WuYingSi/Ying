@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 声明函数
+        function sayHi() {
+            // this 是一个变量
+            console.log(this);
+        }
+
+        // 声明一个对象
+        let user = {
+            name: '张三',
+            sayHi: sayHi // 此处把 sayHi 函数，赋值给 sayHi 属性
+        }
+
+        let person = {
+            name: '李四',
+            sayHi: sayHi
+        }
+
+        // 直接调用
+        sayHi() // window
+        window.sayHi() // window
+
+        // 做为对象方法调用
+        user.sayHi()// user
+        person.sayHi()// person
+    </script>
+</body>
+
+</html>

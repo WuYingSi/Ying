@@ -1,4 +1,3 @@
-/* 全局配置 */
 body {
     margin: 0 auto;
 }
@@ -33,38 +32,23 @@ body {
 }
 
 .bao {
-    background-color: #f36;
-    width: 54px;
-    height: 24px;
+    background-color: #ff3366;
     font-size: 12px;
     color: #fff;
-    line-height: 24px;
+    width: 54px;
+    height: 24px;
     text-align: center;
+    line-height: 24px;
 }
 
 .dian {
     background-color: #f2f2f2;
-    width: 54px;
-    height: 24px;
-    font-size: 12px;
     color: #666;
-    line-height: 24px;
-    text-align: center;
 }
 
-.input {
-    width: 460px;
-    height: 30px;
-    border: 2px solid #ff3366;
-    box-sizing: border-box;
-    outline: none;
-}
-
-/* 搜索框 */
 .inputs {
     width: 460px;
     height: 30px;
-    border-color: white;
     border: 2px solid #f36;
     box-sizing: border-box;
     outline: none;
@@ -89,15 +73,15 @@ body {
     font-size: 12px;
     padding-top: 12px;
     margin-right: 5px;
-    margin-right: 10px;
+
 }
 
 .red {
-    color: #ff3366;
+    color: #f36;
 }
 
 .head-input-bottom ul li:hover {
-    color: #ff3366;
+    color: #f36;
 }
 
 /* 头部结束 */
@@ -120,7 +104,6 @@ body {
     float: left;
     width: 100px;
     font-weight: bold;
-
 }
 
 a:link {
@@ -136,8 +119,6 @@ a:link {
     padding-bottom: 12px;
 }
 
-
-
 .nav ul li:nth-child(1) a {
     color: #f36;
     border-bottom: 2px solid #f36;
@@ -150,7 +131,8 @@ a:link {
     width: 1480px;
     height: 400px;
     margin: 0 auto;
-    margin-top: 15px
+    margin-top: 15px;
+
 }
 
 .box {
@@ -182,7 +164,9 @@ a:link {
     top: 50%;
     margin-top: -22px;
     left: 0;
-    background-image: url(../images/prev.png);
+    background-image: url("../images/prev.png");
+    display: none;
+
 }
 
 .box-right {
@@ -190,9 +174,10 @@ a:link {
     height: 44px;
     position: absolute;
     top: 50%;
-    margin-top: -22px;
     right: 0;
-    background-image: url(../images/next.png);
+    margin-top: -22px;
+    background-image: url("../images/next.png");
+    display: none;
 }
 
 .box ol {
@@ -206,12 +191,13 @@ a:link {
 }
 
 .box ol li {
-    float: left;
     width: 10px;
     height: 10px;
     border-radius: 50%;
     background-color: #fff;
+    float: left;
     margin-right: 10px;
+    z-index: 999;
 }
 
 .box ol li:last-child {
@@ -223,19 +209,18 @@ a:link {
 }
 
 /* 轮播图结束 */
+
 /* 四卡片开始 */
 .card {
     width: 1480px;
     height: 170px;
     margin: 0 auto;
-    /* margin-top: 18px; */
 }
 
 .four-card {
     width: 1200px;
     height: 200px;
     margin: 0 auto;
-    /* float: left; */
 }
 
 .card-list {
@@ -247,7 +232,7 @@ a:link {
 }
 
 /* 四卡片结束 */
-/* 十卡片 */
+/* 十卡片开始 */
 .new {
     width: 1480px;
     height: 870px;
@@ -265,6 +250,7 @@ a:link {
     width: 1200px;
     height: 30px;
     margin: 0 auto;
+
 }
 
 .two {
@@ -273,12 +259,12 @@ a:link {
     height: 26px;
 }
 
-.two1 span {
-    padding-bottom: 10px;
-}
-
 .two1 {
     font-size: 20px;
+}
+
+.two1 span {
+    padding-bottom: 10px;
 }
 
 .two1:nth-child(1) {
@@ -375,106 +361,145 @@ a:link {
 }
 
 /* 十卡片结束 */
-/* 图片大小效果 */
-.newcard-list-img img {
-    width: 244px;
-    height: 340px;
+
+/*好物开始*/
+.good {
+    width: 1200px;
+    height: 450px;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 30px;
 }
 
-.number {
-    width: 224px;
-    height: 20px;
-    margin: 5px 0px;
+.good-card-title {
+    width: 1200px;
+    height: 50px;
+    line-height: 50px;
 }
 
-.number-left {
-    color: #0c36b7;
-}
-
-.number-right {
-    width: 45px;
-    height: 20px;
-    font-size: 14px;
-    line-height: 20px;
-
-    color: #99b5b7;
-}
-
-.number-right img {
-    width: 14px;
-    height: 14px;
-    margin-bottom: 4px;
-    vertical-align: middle;
-    margin-right: 5px;
-}
-
-.title {
-    width: 224px;
-    height: 20px;
-}
-
-.title-left img {
-    width: 40px;
-    height: 18px;
-}
-
-.title-right {
-    width: 100px;
-    height: 20px;
-    overflow: hidden;
-    /* 文字溢出用省略号替换 */
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    font-style: 14px;
-    line-height: 24px;
+.good-card-title .title-left {
+    font-size: 20px;
     color: #666;
+    font-weight: bold;
 }
 
-/* 底部盒子 */
+.good-card-title .title-right {
+    text-align: right;
+    color: #999;
+    margin-top: 15px;
+}
+
+.title-center {
+    text-align: center;
+    color: #666;
+    margin-top: 15px;
+}
+
+.three-boxs {
+    padding-top: 10px;
+}
+
+.three-box-top {
+    position: relative;
+}
+
+.three-box-top .number {
+    width: 390px;
+    line-height: 300px;
+    position: absolute;
+    text-align: center;
+    font-size: 23px;
+    color: #666;
+    left: -10px;
+    top: 0;
+}
+
+.three-box-top img {
+    width: 390px;
+    height: 210px;
+}
+
+.three-box {
+    border: 1px solid #ccc;
+    width: 390px;
+    margin-right: 10px;
+}
+
+.three-box:last-child {
+    margin-right: 0;
+}
+
+.three-box-bottom {
+    width: 400px;
+    margin-top: 20px;
+}
+
+.three-box-bottom img {
+    width: 114px;
+    height: 130px;
+
+}
+
+.three-box-img {
+    margin: 0 8px;
+    text-align: center;
+}
+
+.three-box-img .three-box-text {
+    font-size: 12px;
+    color: #666;
+    margin-top: 5px;
+    padding-bottom: 10px;
+}
+
+/*好物结束*/
+
+
+/*底部栏开始*/
 .bottom-box {
     width: 100%;
-    border-color: #ddd;
+    background-color: #ddd;
+    border-top: 1px solid #333;
 }
 
 .bottom-auto {
     width: 1200px;
     height: 300px;
-    margin: 0 auto;
     background-color: #ddd;
+    margin: 0 auto;
 }
 
-.bottem-care {
+.bottom-care {
     width: 1200px;
     height: 230px;
     border-bottom: 1px solid #666;
 }
 
-.bottem-care ul {
-    float: left;
-    height: 190px;
+.bottom-care ul {
     width: 170px;
+    height: 190px;
+    float: left;
     font-size: 12px;
-    color: #666;
     padding-top: 20px;
-    margin: 10px;
+    color: #666;
 }
 
-.bottem-care ul li:nth-child(1) {
+.bottom-care ul li:nth-child(1) {
     font-size: 16px;
     font-weight: bold;
     color: #333;
+
 }
 
-.bottem-care ul li {
+.bottom-care ul li {
     width: 170px;
     height: 40px;
     line-height: 40px;
 }
 
-.bottem-care ul li:hover {
-    color: #0c36b7;
+.bottom-care ul li:hover {
+    color: #f36;
 }
-
 
 .wx {
     width: 150px;
@@ -484,24 +509,106 @@ a:link {
     color: #666;
 }
 
+.wx-title {
+    text-align: center;
+}
+
 .wx img {
     margin-top: 20px;
     margin-left: 25px;
 }
 
-.wx-title {
-    text-align: center;
-}
-
-.bottem-text {
+.bottom-text {
     width: 1200px;
     height: 70px;
 }
 
-.bottem-text p {
+.bottom-text p {
     height: 35px;
-    line-height: 35px;
-    text-align: center;
-    font-size: 12px;
     color: #666;
+    font-size: 12px;
+    text-align: center;
+    line-height: 35px;
 }
+
+/*底部栏结束*/
+
+
+/*侧边栏开始*/
+.aside {
+    position: fixed;
+    width: 40px;
+    top: 0;
+    right: 0;
+    background-color: #f6f6f6;
+
+}
+
+.aside ul {
+    border-left: 1px solid #dedede;
+}
+
+.aside li {
+    border-bottom: 1px solid #dedede;
+}
+
+.aside li:nth-child(1) {
+    height: 70px;
+}
+
+.li-text {
+    font-size: 16px;
+    width: 10px;
+    padding: 10px 12px;
+}
+
+.li-text ul li:nth-child(2) {
+    position: relative;
+}
+
+.iconfont {
+    color: #f36;
+}
+
+.aside li:hover {
+    background-color: #f36;
+    color: #fff;
+}
+
+.aside li:hover .iconfont {
+    color: #fff;
+}
+
+.erweima {
+    width: 140px;
+    height: 140px;
+    position: absolute;
+    top: 55px;
+    left: -160px;
+    display: none;
+    background-color: #fff;
+    border: 1px solid #dedede;
+    padding: 10px;
+}
+
+.aside ul li:nth-child(2):hover .erweima {
+    display: block;
+}
+
+.aside ul li:nth-child(2):hover .three-white {
+    display: block;
+}
+
+.three-white {
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    position: absolute;
+    background-color: 10px solid #fff;
+    left: 0px;
+    display: none;
+    top: 110px;
+}
+
+
+/*侧边栏结束*/

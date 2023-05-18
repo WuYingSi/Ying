@@ -1,0 +1,692 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.bd {
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    color: #838383;
+}
+
+i {
+    font-style: normal;
+}
+
+
+/* 左边图片 */
+
+.bd_l {
+    flex: 1;
+}
+
+.bd_l img {
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* 右边模块 */
+
+.bd_r {
+    flex: 3;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+
+/* header模块 */
+
+header {
+    overflow: hidden;
+}
+
+.logo {
+    float: left;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    vertical-align: top;
+}
+
+.logo span {
+    font-size: 25px;
+}
+
+nav {
+    float: right;
+    line-height: 40px;
+    font-size: 14px;
+}
+
+nav a {
+    padding: 0 10px;
+    transition: all .3s;
+}
+
+nav a:nth-child(3)::after {
+    content: '｜';
+    margin-left: 15px;
+    color: #dddddd;
+}
+
+nav a:hover {
+    color: #ff6900;
+}
+
+.iconfont {
+    font-size: 12px;
+}
+
+.language {
+    text-align: center;
+    position: absolute;
+    right: 15px;
+    background-color: #fff;
+    color: #262626;
+    border-radius: 7px;
+    overflow: hidden;
+    height: 0;
+    transition: all .3s;
+}
+
+nav .nav_ico {
+    transition: all .3s;
+    position: absolute;
+    top: 40px;
+    right: 25px;
+    width: 0;
+    height: 0;
+    border-color: #838383 transparent transparent transparent;
+    border-width: 5px;
+    border-style: solid;
+    transition: all .3s;
+}
+
+.language p {
+    padding: 0 15px;
+}
+
+.language p:hover {
+    background-color: #f5f5f5;
+}
+
+nav a:nth-child(4) {
+    padding-right: 20px;
+}
+
+nav a:nth-child(4):hover .nav_ico {
+    transform: rotate(180deg);
+    transform-origin: center 2px;
+    border-color: #ff6900 transparent transparent transparent;
+}
+
+
+/* 表单 */
+
+.menu,
+.scan {
+    overflow: hidden;
+    padding: 40px 45px;
+    background-color: #fff;
+    width: 360px;
+    margin: 50px auto;
+    position: relative;
+    border-radius: 7px;
+}
+
+.menu .erweima,
+.scan .pc {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 64px;
+    height: 64px;
+    background-color: #ffbe99;
+    border-radius: 7px;
+    text-align: center;
+    font-size: 40px;
+    line-height: 64px;
+    color: #fff;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.scan .pc {
+    line-height: 55px;
+}
+
+.menu .erweima::after,
+.scan .pc::after {
+    content: '';
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-width: 32px;
+    border-color: transparent transparent #fff #fff;
+    border-style: solid;
+}
+
+.scan {
+    display: none;
+}
+
+
+/* 右上角登录图标 */
+
+.login_prompt,
+.scan_prompt {
+    position: absolute;
+    top: 15px;
+    right: 70px;
+    width: 85px;
+    height: 30px;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    font-size: 13px;
+    font-weight: 500;
+    border-radius: 3px;
+    background-color: #ff6900;
+    transition: all .3s;
+    transform: scale(0);
+    transform-origin: right center;
+}
+
+.login_prompt::after,
+.scan_prompt::after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    right: -10px;
+    width: 0;
+    height: 0;
+    border-color: transparent transparent transparent #ff6900;
+    border-width: 5px;
+    border-style: solid;
+}
+
+
+/* 盒子 */
+
+.box {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 900px;
+    margin-top: 50px;
+    overflow: hidden;
+    transition: all .3s;
+}
+
+
+/* 登录模块 */
+
+.login_hd a {
+    font-size: 22px;
+    margin-right: 15px;
+    padding-bottom: 10px;
+    color: #bbbbbb;
+    font-weight: 400;
+}
+
+.login_hd .current {
+    color: #000;
+    font-weight: 600;
+    border-bottom: 4px solid #ff6900;
+}
+
+
+/* 登录表单模块 */
+
+.login {
+    float: left;
+}
+
+.login input,
+.enroll input {
+    border: 0;
+    background-color: #f9f9f9;
+    width: 315px;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 30px 20px 10px;
+    margin: 15px 0 10px 0;
+    border-radius: 5px;
+    outline-color: #ff5c00;
+}
+
+.login p {
+    font-size: 12px;
+}
+
+
+/* 获取焦点时的阴影 */
+
+.txt_shadow {
+    box-shadow: 0 0 5px #ff6900;
+}
+
+.txt_box,
+.psd_box,
+.vcod_box {
+    position: relative;
+}
+
+
+/* 放大 */
+
+.txt_box .txt_big,
+.psd_box .psd_big,
+.vcod_box .vcod_big {
+    position: absolute;
+    left: 20px;
+    top: 35px;
+    color: #838383;
+    transition: all .3s;
+}
+
+
+/* 缩小 */
+
+.txt_box .txt_min,
+.psd_box .psd_min,
+.vcod_min {
+    position: absolute;
+    left: 20px;
+    top: 25px;
+    font-size: 13px;
+    transition: all .3s;
+}
+
+
+/* 错误提示信息 */
+
+.txt_box .txt_error,
+.psd_box .psd_error,
+.vcod_box .vcod_error {
+    color: #f04645;
+    display: none;
+}
+
+
+/* 眼睛按钮 */
+
+.psd_box .psd_btn {
+    position: absolute;
+    top: 15px;
+    right: 6px;
+    width: 50px;
+    height: 60px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #838383;
+    text-align: center;
+    line-height: 60px;
+}
+
+.psd_box .psd_btn:hover {
+    color: #262626;
+}
+
+.login .check_box,
+.enroll .check_box {
+    height: 30px;
+    line-height: 20px;
+    font-size: 14px;
+    color: #838383;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.login .check_box a,
+.enroll .check_box a {
+    color: #000;
+}
+
+
+/* 复选框边框 */
+
+.login .check,
+.enroll .check_en {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    border: 1px solid #838383;
+    border-radius: 3px;
+    cursor: pointer;
+    text-align: center;
+    color: #fff;
+    background-color: #f9f9f9;
+    line-height: 15px;
+}
+
+#check,
+#check_en {
+    display: none;
+}
+
+.login .check_box:hover .check,
+.enroll .check_box:hover .check_en {
+    border-color: #ff6900;
+}
+
+
+/* 不同意用户条款 */
+
+.check_no,
+.checkb_no {
+    position: absolute;
+    background-color: #fff;
+    width: 200px;
+    height: 50px;
+    font-size: 15px;
+    text-align: center;
+    line-height: 50px;
+    box-shadow: 0 0 10px #dddddd;
+    display: none;
+}
+
+.check_no {
+    top: 30%;
+    left: 10%;
+}
+
+.checkb_no {
+    top: 40%;
+    left: 20%;
+}
+
+.check_no img {
+    transform: translateY(4px);
+}
+
+
+/* 登录按钮 */
+
+.login .login_btn,
+.enroll .enroll_btn {
+    height: 60px;
+    width: 360px;
+    text-align: center;
+    line-height: 60px;
+    background-color: #ffcba9;
+    margin: 20px 0;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.forget a {
+    color: #ff6900;
+}
+
+.forget a:last-child {
+    float: right;
+}
+
+
+/* 登录方式 */
+
+.login_way {
+    text-align: center;
+}
+
+.login_way p,
+.scan_way {
+    font-size: 18px;
+    color: #838383;
+    margin-top: 20px;
+}
+
+.login_way a {
+    display: inline-block;
+    width: 46px;
+    height: 46px;
+    margin: 20px 10px 0;
+    background-image: url(img/loading/各种支付图.png);
+}
+
+.login_way a:nth-of-type(1) {
+    background-position: -25px -10px;
+}
+
+.login_way a:nth-of-type(2) {
+    background-position: -95px -10px;
+}
+
+.login_way a:nth-of-type(3) {
+    background-position: -165px -10px;
+}
+
+.login_way a:nth-of-type(4) {
+    background-position: -235px -10px;
+}
+
+
+/* 注册表单模块 */
+
+.enroll {
+    position: relative;
+    float: left;
+    margin-left: 90px;
+}
+
+
+/* 国家 */
+
+.region_box {
+    position: relative;
+}
+
+.region_min {
+    position: absolute;
+    top: 20px;
+    left: 25px;
+    font-size: 13px;
+}
+
+datalist {
+    width: 450px;
+    height: 300px;
+}
+
+
+/* 手机号码 */
+
+.phe_box {
+    position: relative;
+}
+
+.enroll .phe {
+    width: 205px;
+    padding: 30px 10px 10px 140px;
+    font-size: 17px;
+    border-radius: 7px;
+    border: 0;
+}
+
+.phe_btn {
+    position: absolute;
+    left: 0;
+    top: 25px;
+    color: #838383;
+    cursor: not-allowed;
+    width: 130px;
+    height: 60px;
+    text-align: center;
+}
+
+.phe_big {
+    position: absolute;
+    left: 40%;
+    top: 30px;
+    color: #838383;
+}
+
+.phe_min {
+    position: absolute;
+    left: 40%;
+    top: 20px;
+    font-size: 13px;
+}
+
+.phe_error,
+.region_error,
+.vcod_error {
+    color: #f04645;
+    font-size: 12px;
+    display: none;
+}
+
+.phe_box i {
+    position: absolute;
+    top: 15px;
+    left: 115px;
+}
+
+
+/* 获取验证码按钮 */
+
+.vcod_btn {
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #ff6900;
+}
+
+
+/* 收不到验证码 */
+
+.forget_en {
+    overflow: hidden;
+}
+
+.forget_en a {
+    float: left;
+    color: #ff6900;
+}
+
+
+/* 二维码登录模块 */
+
+.scan {
+    text-align: center;
+    overflow: inherit;
+}
+
+.scan h2 {
+    font-weight: 500;
+    margin: 30px 0;
+}
+
+
+/* 帮助模块 */
+
+.scan_hint {
+    position: relative;
+    font-size: 13px;
+    margin: 20px 0 50px 0;
+}
+
+.scan_hint .iconfont {
+    font-size: 15px;
+    color: #bbbbbb;
+}
+
+.scan_ico {
+    position: absolute;
+    top: 1px;
+    right: 30px;
+}
+
+.scan_help {
+    position: absolute;
+    top: -155px;
+    right: -380px;
+    border-radius: 3px;
+    background-color: #fff;
+    transition: all .3s;
+    transform: scale(0);
+    transform-origin: left center;
+    box-shadow: 0 0 10px #bbbbbb;
+    padding: 30px;
+}
+
+.scan_help::after {
+    content: '';
+    position: absolute;
+    top: 160px;
+    left: -10px;
+    width: 0;
+    height: 0;
+    border-color: transparent #fff transparent transparent;
+    border-width: 5px;
+    border-style: solid;
+}
+
+.scan_help h3 {
+    font-size: 18px;
+    color: #262626;
+}
+
+.scan_help p {
+    font-size: 20px;
+    text-align: left;
+    margin-top: 20px;
+    color: #262626;
+}
+
+.scan_help h6 {
+    font-size: 13px;
+    font-weight: 400;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.scan_way a {
+    display: inline-block;
+    width: 60px;
+    height: 20px;
+    margin: 10px;
+    font-size: 12px;
+    padding-top: 55px;
+    background-image: url(img/loading/其他支付app.png);
+    background-repeat: no-repeat;
+}
+
+.scan_way a:nth-of-type(1) {
+    background-position: 3px 0px;
+}
+
+.scan_way a:nth-of-type(2) {
+    background-position: -75px 0px;
+}
+
+.scan_way a:nth-of-type(3) {
+    background-position: -156px 0px;
+}
+
+
+/* 底部 */
+
+footer {
+    text-align: center;
+    font-size: 13px;
+    color: #838383;
+    margin-top: 80px;
+}

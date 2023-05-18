@@ -1,0 +1,316 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+.content {
+    display: flex;
+    width: 100%;
+}
+
+.contentLeft {
+    /* float: left; */
+    width: 25%;
+    height: 100vh;
+    background-image: url(https://cdn.web-global.fds.api.mi-img.com/mcfe--mi-account/static/static/media/banner.92c693b4..jpg);
+    background-size: 100%;
+
+
+}
+
+.contentRight {
+    overflow: hidden;
+    flex: 1;
+}
+
+/* 头部部分 */
+.header {
+    padding: 20px;
+    height: 40px;
+}
+
+.header_title {
+    float: left;
+
+}
+
+.header_title>img {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.header_title>p {
+    color: #333;
+    font-size: 26px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.header_nav {
+    float: right;
+}
+
+.header_nav>ul>li {
+    display: inline;
+    padding: 0 10px;
+    color: #838383;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+
+}
+
+.header_nav>ul>li:nth-child(4) {
+    border-left: 1px solid #838383;
+    ;
+
+}
+
+/* 二维码 */
+.switch {
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: .4;
+    width: 0;
+    height: 0;
+    border-top: 64px solid #ff5c00;
+    border-left: 64px solid transparent;
+}
+
+.switch:hover {
+    opacity: 1;
+}
+
+.switch>svg {
+    position: absolute;
+    right: 10px;
+    top: -55px;
+
+}
+
+.icon:hover .dialaing {
+    display: block;
+}
+
+.dialaing {
+    display: none;
+    margin-top: -45px;
+    font-size: 12px;
+    margin-left: -170px;
+    position: fixed;
+    background-color: #ff5c00;
+    box-shadow: 5px 5px 15px 2px #c4c4c4;
+
+}
+
+.dialaing ul {
+    /* padding: 10px; */
+}
+
+.dialaing li {
+    color: #fff;
+    text-align: center;
+    width: 80px;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+.dialaing::before {
+    width: 0px;
+    height: 0px;
+    content: "";
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 8px solid #ff5c00;
+    position: absolute;
+    top: 6px;
+    ;
+    right: -10px;
+}
+
+/* 表单部分 */
+.mi-layout__container {
+    /* text-align: center; */
+    padding-top: 20px;
+}
+
+.card {
+    width: 360px;
+    border-radius: 4px;
+    box-shadow: 0 20px 50px 0 hsl(0deg 0% 64% / 10%);
+    margin: 0 auto 80px;
+    padding: 40px 45px;
+    position: relative;
+    background-color: #fff;
+}
+
+/* tab切换 */
+.tab-tilte {
+    text-align: left;
+}
+
+.tab-tilte>li {
+    display: inline;
+    font-size: 22px;
+    color: #bbb;
+    margin-right: 20px;
+}
+
+.tab-tilte .active {
+    font-weight: bold;
+    color: #333;
+    border-bottom: 3px solid #ff5c00;
+    text-shadow: 0 0 .25px currentColor;
+}
+
+.tab_input {
+    padding: 20px 2px 0;
+    margin: 0 auto;
+
+}
+
+.tab_form>p>span {
+    color: #bbb;
+}
+
+.user_agreement {
+    text-decoration: none;
+    color: #333;
+}
+
+.tab_form>p>input {
+    border: 0px;
+    padding: 20px 10px;
+    background: #f9f9f9;
+}
+
+.tab_form>p {
+    margin-top: 20px;
+}
+
+.phoneNum>input,
+.password>input {
+    padding: 20px 10px;
+    width: 334px;
+    outline: none;
+}
+
+.phoneNum>input::-webkit-input-placeholder,
+.password>input::-webkit-input-placeholder {
+    color: rgba(0, 0, 0, .4);
+    font-size: 17px;
+    height: 20px;
+    line-height: 20px;
+    top: 20px;
+}
+
+.submit {
+    background-color: #ff5c00;
+    border: none;
+    color: #fff;
+    border-radius: 4px;
+    padding: 0 20px;
+    opacity: .4;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 374px;
+    font-size: 18px;
+    height: 60px;
+    line-height: 60px;
+}
+
+/* 注册 */
+.tab_form2>p input {
+    border: none;
+}
+
+.signIn_adr,
+.signIn_Num,
+.signIn_password {
+    background: #f9f9f9;
+    margin-top: 20px;
+    padding: 20px 10px;
+    width: 334px;
+    height: 20px;
+    line-height: 20px;
+}
+
+.signIn_adr select {
+    border: none;
+    background-color: #f9f9f9;
+    outline: none;
+}
+
+.signIn_Num input {
+    background-color: #f9f9f9;
+    font-size: 17px;
+    margin-left: 40px;
+    outline: none;
+    color: rgba(0, 0, 0, .4);
+    border: none;
+}
+
+.signIn_password input {
+    font-size: 17px;
+    outline: none;
+    /*点击后无边框*/
+    background-color: #f9f9f9;
+    color: rgba(0, 0, 0, .4);
+    border: none;
+}
+
+.signIn_password span {
+    margin-right: 0;
+    color: #ff5c00;
+    margin-left: 50px;
+}
+
+.signIn {
+    background-color: #ff5c00;
+    border: none;
+    color: #fff;
+    border-radius: 4px;
+    padding: 0 20px;
+    opacity: .4;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 374px;
+    font-size: 18px;
+    height: 60px;
+    line-height: 60px;
+}
+
+/* 忘记密码 */
+.forgetPass {
+    width: 374px;
+    display: flex;
+    justify-content: space-between;
+    color: #ff5c00;
+}
+
+.otherLogin_title {
+    width: 374px;
+    color: #aaa;
+    font-size: 17px;
+    display: block;
+    text-align: center;
+    line-height: 40px;
+}
+
+.otherLogin_list {
+    width: 374px;
+    text-align: center;
+}
+
+.otherLogin_list svg {
+    margin: 0 12px;
+}

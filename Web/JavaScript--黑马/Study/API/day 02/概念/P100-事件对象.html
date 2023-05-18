@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>事件对象</title>
+</head>
+
+<body>
+    <h3>事件对象</h3>
+    <p>任意事件类型被触发时与事件相关的信息会被以对象的形式记录下来，我们称这个对象为事件对象。</p>
+    <hr>
+    <button class="box">点击</button>
+    <script>
+        // 获取 .box 元素
+        const box = document.querySelector('.box')
+        // 添加事件监听
+        box.addEventListener('click', function (e) {
+            console.log('任意事件类型被触发后，相关信息会以对象形式被记录下来...');
+
+            // 事件回调函数的第1个参数即所谓的事件对象
+            console.log(e)
+        })
+    </script>
+</body>
+
+</html>
