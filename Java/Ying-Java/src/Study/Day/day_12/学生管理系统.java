@@ -12,24 +12,26 @@ public class 学生管理系统 {
         // 集合：用户信息存放
         ArrayList<User> list = new ArrayList<>();
         list.add(new User("444444444444444444", "xiaoying", "123456", "12345678910"));
-        // 首页
-        System.out.println("\t\t欢迎来到学生管理系统");
-        System.out.println("请选择操作\t1登录\t2注册\t3忘记密码");
-        // 选择方法
-        String choose = sc.next();
-        switch (choose) {
-            case "1" -> login(list);
-            case "2" -> {
-                User newUser = register(list);
-                list.add(newUser);
-                System.out.println("用户" + newUser.getName() + "注册成功");
+        while (true) {
+            // 首页
+            System.out.println("\t\t欢迎来到学生管理系统");
+            System.out.println("请选择操作\t1登录\t2注册\t3忘记密码");
+            // 选择方法
+            String choose = sc.next();
+            switch (choose) {
+                case "1" -> login(list);
+                case "2" -> {
+                    User newUser = register(list);
+                    list.add(newUser);
+                    System.out.println("用户" + newUser.getName() + "注册成功");
+                }
+                case "3" -> forgotPassword(list);
+                case "4" -> {
+                    System.out.println("已退出系统");
+                    System.exit(0);
+                }
+                default -> System.out.println("输入错误");
             }
-            case "3" -> forgotPassword(list);
-            case "4" -> {
-                System.out.println("已退出系统");
-                System.exit(0);
-            }
-            default -> System.out.println("输入错误");
         }
     }
 
@@ -39,11 +41,27 @@ public class 学生管理系统 {
         Scanner sc = new Scanner(System.in);
         System.out.println("请输入用户名：");
         String username = sc.next();
+        // 用户名如果未注册，直接结束方法，并提示：用户名未注册，请先注册
+        if (!contains(list, username)) {
+            // 用户名没有匹配项即退出
+            System.out.println("用户名" + username + "未注册，请先注册");
+            return;// 直接返回主页
+        }
         System.out.println("请输入密码：");
         String password = sc.next();
-        System.out.println("请输入验证码（" + getVerifyCode() + "）：");
+        while (true) {
+            String verify = getVerifyCode();
+            System.out.println("请输入验证码（" + getVerifyCode() + "）：");
+            String newverify = sc.next();
+            // 判断验证码是否正确，如不正确，重新输入
+            System.out.println(verify.equals(newverify));
+            if (verify.equals(newverify)) {
+                System.out.println("验证码输入错误，请重新输入");
+            }else {
+                break;
+            }
+        }
         System.out.println("用户" + username + "登录成功");
-
     }
 
     // 随机获取五位数的验证码
