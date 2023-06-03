@@ -1,12 +1,13 @@
 package Study.Day.day_12;
 
+import Study.Day.day_11.案例.P6_学生管理系统;
 import Study.Javabean.User;
 
 import java.util.ArrayList;
 import java.util.Random;
 import java.util.Scanner;
 
-public class 学生管理系统 {
+public class 学生管理系统登录页 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         // 集合：用户信息存放
@@ -77,6 +78,9 @@ public class 学生管理系统 {
             boolean flag = checkUserInfo(list, userInfo);
             if (flag) {
                 System.out.println("用户" + username + "登录成功");
+                // 创建对象调用管理系统方法
+                P6_学生管理系统 ss = new P6_学生管理系统();
+                ss.studentSystem();
                 break;
             } else {
                 System.out.println("登录失败，用户名或者密码出错，请重新输入");
