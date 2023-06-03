@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class P6_学生管理系统 {
-    public static void main(String[] args) {
+    public static void studentSystem() {
         Scanner sc = new Scanner(System.in);
         ArrayList<Student> list = new ArrayList<>();
         // 选择5退出整个while
