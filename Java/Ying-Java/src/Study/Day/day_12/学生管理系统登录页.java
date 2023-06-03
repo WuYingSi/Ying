@@ -39,29 +39,66 @@ public class 学生管理系统 {
     // 登录
     private static void login(ArrayList<User> list) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("请输入用户名：");
-        String username = sc.next();
-        // 用户名如果未注册，直接结束方法，并提示：用户名未注册，请先注册
-        if (!contains(list, username)) {
-            // 用户名没有匹配项即退出
-            System.out.println("用户名" + username + "未注册，请先注册");
-            return;// 直接返回主页
-        }
-        System.out.println("请输入密码：");
-        String password = sc.next();
-        while (true) {
-            String verify = getVerifyCode();
-            System.out.println("请输入验证码（" + getVerifyCode() + "）：");
-            String newverify = sc.next();
-            // 判断验证码是否正确，如不正确，重新输入
-            System.out.println(verify.equals(newverify));
-            if (verify.equals(newverify)) {
-                System.out.println("验证码输入错误，请重新输入");
-            }else {
+        for (int i = 0; i < 3; i++) {
+            System.out.println("请输入用户名：");
+            String username = sc.next();
+            // 用户名如果未注册，直接结束方法，并提示：用户名未注册，请先注册
+            if (!contains(list, username)) {
+                // 用户名没有匹配项即退出
+                System.out.println("用户名" + username + "未注册，请先注册");
+                return;// 直接返回主页
+            }
+            // 密码
+            System.out.println("请输入密码：");
+            String password = sc.next();
+            // 验证码
+            while (true) {
+                String rightCode = getVerifyCode();
+                System.out.println("请输入验证码（" + rightCode + "）：");
+                String code = sc.next();
+                // 判断验证码是否正确，如不正确，重新输入
+                // 比较验证码忽略大小写
+                if (code.equalsIgnoreCase(rightCode)) {
+                    break;
+                } else {
+                    System.out.println("验证码输入错误，请重新输入");
+                }
+            }
+
+            // 验证用户名和密码是否正确
+            // 存放用户信息得集合中是否有对应的用户名以及密码
+            // 先封装一个对象，用来存放登录的用户信息
+            /*
+             *   封装思想的应用：
+             *   可以把一些零散的数据，封装成一个对象
+             *   以后传递参数的时候，只要传递一个整体就行，不需要管零散的数据
+             * */
+            User userInfo = new User(null, username, password, null);
+            boolean flag = checkUserInfo(list, userInfo);
+            if (flag) {
+                System.out.println("用户" + username + "登录成功");
                 break;
+            } else {
+                System.out.println("登录失败，用户名或者密码出错，请重新输入");
+                if (i == 2) {
+                    System.out.println("用户已被锁定，请半小时之后重新输入");
+                } else {
+                    System.out.println("已经失败" + i + "次，三次输入错误，用户将被锁定半小时");
+                }
             }
         }
-        System.out.println("用户" + username + "登录成功");
+    }
+
+    // 方法：验证用户名以及密码
+    private static boolean checkUserInfo(ArrayList<User> list, User userInfo) {
+        // 遍历用户信息
+        for (int i = 0; i < list.size(); i++) {
+            User u = list.get(i);// 获取每一个用户对象信息
+            if (u.getName().equals(userInfo.getName()) && u.getPassword().equals(userInfo.getPassword())) {
+                return true;// 存在
+            }
+        }
+        return false;// 不存在
     }
 
     // 随机获取五位数的验证码
@@ -293,6 +330,49 @@ public class 学生管理系统 {
 
     // 忘记密码
     public static void forgotPassword(ArrayList<User> list) {
+        Scanner sc = new Scanner(System.in);
+        // 用户名
+        System.out.println("请输入用户名：");
+        String username = sc.next();
+        // 用户名如果未注册，直接结束方法，并提示：用户名未注册，请先注册
+        if (!contains(list, username)) {
+            // 用户名没有匹配项即退出
+            System.out.println("用户名" + username + "未注册，请先注册");
+            return;// 直接返回主页
+        }
+        // 身份证号码
+        System.out.println("请输入身份证号码：");
+        String peronID = sc.next();
+        // 手机号
+        System.out.println("请输入手机号");
+        String phoneNumber = sc.next();
+        // 先把对应的用户名的用户信息获取
+        int index = getIndex(list, username);
+        User rightuser = list.get(index);
+        // 方法：判断用户信息的身份证号码和手机号码是否一致
+        if (!(rightuser.getId().equalsIgnoreCase(peronID) && rightuser.getPhone().equals(phoneNumber))) {
+            // 不一致，提示后跳到首页
+            System.out.println("用户信息不匹配，修改失败");
+            return;
+        }
+        // 设置新的密码
+        // 密码
+        String password;
+        while (true) {
+            System.out.println("请输入密码");
+            password = sc.next();
+            System.out.println("请再次输入密码");
+            String repassword = sc.next();
+            // 密码格式判断
+            // 密码键盘输入两次，两次一致才可以修改密码
+            if (!password.equals(repassword)) {
+                System.out.println("两次输入的密码不一致，请重新输入");
+            } else {
+                break;
+            }
+        }
+        rightuser.setPassword(password);
+        System.out.println("密码修改成功");
     }
 
 
