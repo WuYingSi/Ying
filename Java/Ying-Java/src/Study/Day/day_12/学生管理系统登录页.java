@@ -1,6 +1,6 @@
 package Study.Day.day_12;
 
-import Study.Day.day_11.案例.P6_学生管理系统;
+import Study.Day.day_11.Case.P6_学生管理系统;
 import Study.Javabean.User;
 
 import java.util.ArrayList;
