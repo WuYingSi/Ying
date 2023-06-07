@@ -4,7 +4,7 @@ public class Student {
     private String id;//
     private String name;// 姓名
     private int age;// 年龄
-    private String address;
+    private String address;// 地址
     // day 11 P3_添加学生对象并遍历
     public Student(String name, int age) {
         this.name = name;
