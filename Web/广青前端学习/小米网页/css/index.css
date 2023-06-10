@@ -250,7 +250,7 @@ body {
 
 /* 轮播图 */
 .banner {
-    height: 460px;
+    height: 461px;
     position: relative;
 }
 
@@ -624,6 +624,7 @@ sub .home-promo:hover {
     /* font-size: 28px; */
     line-height: 30px;
     background-color: #fff;
+    transition: all 0.5s;
 }
 
 .side-bar .icon i {
