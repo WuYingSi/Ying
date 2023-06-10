@@ -225,7 +225,7 @@ nav a:nth-child(4):hover .nav_ico {
     margin-top: 50px;
     overflow: hidden;
     transition: all .3s;
-    height: 66vh;
+    height: 72vh;
 }
 
 
@@ -567,10 +567,6 @@ datalist {
     line-height: 50px;
     text-align: center;
     color: #ff6900;
-}
-
-.vcod_btn:hover {
-    
 }
 
 
