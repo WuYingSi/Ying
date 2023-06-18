@@ -1,4 +1,4 @@
-package Study.Day.day_09;
+package day_09;
 
 import Study.Javabean.Goods;
 
