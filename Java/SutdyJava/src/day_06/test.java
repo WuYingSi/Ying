@@ -1,4 +1,4 @@
-package Study.Day.day_06;
+package day_06;
 
 public class test {
   public static void main(String[] args) {
