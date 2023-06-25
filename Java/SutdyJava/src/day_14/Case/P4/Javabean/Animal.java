@@ -4,9 +4,17 @@ public class Animal {
     private int age;
     private String color;
 
+    public Animal() {
+    }
+
+    public Animal(int age, String color) {
+        this.age = age;
+        this.color = color;
+    }
+
     // 吃东西
     public void eat(String something) {
-        System.out.println(age + "岁的" + color + "颜色的狗在吃" + something);
+        System.out.println(age + "岁的" + color + "颜色的动物在吃" + something);
     }
 
     public String getColor() {
