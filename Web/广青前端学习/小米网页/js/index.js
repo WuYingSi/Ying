@@ -22,7 +22,7 @@ let i = 0
 function tim() {
     idTime = setInterval(function () {
         next.click()
-    }, 2000)
+    }, 3000)
 }
 // 左箭头
 const prev = document.querySelector('.prev-next .prev')
@@ -74,7 +74,7 @@ input.addEventListener('blur', function () {
 // 为按钮应用鼠标事件
 // 鼠标经过
 btn.addEventListener('mouseenter', function () {
-    block()
+    btn.classList.add('act')
     li.style.display = 'none'
 })
 // 鼠标离开
@@ -96,15 +96,19 @@ function none() {
 // 浮动侧边栏滚动鼠标后显示
 // 获取侧边栏
 const side = document.querySelector('.side-bar')
-// 获取侧边栏最后得一个元素
+// 获取侧边栏最后的一个元素
 const end = document.querySelector('.side-bar .icon-end')
 // 获取鼠标滚动事件
 window.addEventListener('scroll', function () {
     const n = document.documentElement.scrollTop
     if (n > 0) {
         side.style.opacity = '1'//显示
+        end.style.opacity = '0'
     } else if (n === 0) {
         side.style.opacity = '0'// 隐藏
+    }
+    if (n > 500) {
+        end.style.opacity = '1'
     }
 })
 // 给最后一个模块给定点击事件
