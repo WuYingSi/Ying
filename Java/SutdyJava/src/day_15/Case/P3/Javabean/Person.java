@@ -1,6 +1,6 @@
 package day_15.Case.P3.Javabean;
-
-public class Person {
+// 不能直接创建Person的对象
+public abstract class Person {
     private String name;
     private int age;
 
