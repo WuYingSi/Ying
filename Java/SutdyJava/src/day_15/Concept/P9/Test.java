@@ -1,14 +1,12 @@
 package day_15.Concept.P9;
 
-import day_15.Concept.P9.Student;
-
 public class Test  {
     public static void main(String[] args) {
         // 普通方式传入对象
         // 创建实现类对象
         Student s = new Student();
 
-        goSwimming(s);
+        goSwimming((Swim) s);
         // 匿名内部类使用场景:作为方法参数传递
         Swim s3 = new Swim() {
             @Override
