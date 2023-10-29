@@ -1,4 +1,4 @@
-package day_18.Case.P4;
+package Case.P4;
 
 import java.io.IOException;
 

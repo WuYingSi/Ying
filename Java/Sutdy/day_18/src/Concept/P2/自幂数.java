@@ -1,4 +1,4 @@
-package day_18.Concept.P2;
+package Concept.P2;
 
 public class 自幂数 {
     /*自幂数，一个n位自然数等于自身各个数位上数字的n次幂之和

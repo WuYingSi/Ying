@@ -1,4 +1,4 @@
-package day_18.Concept.P2;
+package Concept.P2;
 
 public class 质数 {
     //判断一个数是否为一个质数

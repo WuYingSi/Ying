@@ -1,4 +1,4 @@
-package day_18.Case.P3;
+package Case.P3;
 
 public class SysteamDome {
     public static void main(String[] args) {

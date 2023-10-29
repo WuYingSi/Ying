@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/SutdyJava/SutdyJava.iml" filepath="$PROJECT_DIR$/SutdyJava/SutdyJava.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day_18/day_18.iml" filepath="$PROJECT_DIR$/day_18/day_18.iml" />
       <module fileurl="file://$PROJECT_DIR$/day_19/day_19.iml" filepath="$PROJECT_DIR$/day_19/day_19.iml" />
     </modules>
   </component>

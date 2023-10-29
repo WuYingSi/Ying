@@ -1,4 +1,4 @@
-package day_18.Concept.P4;
+package Concept.P4;
 
 import javax.swing.*;
 import java.awt.*;

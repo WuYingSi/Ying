@@ -1,4 +1,4 @@
-package day_18.Concept.P3;
+package Concept.P3;
 
 public class 课堂练习 {
     public static void main(String[] args) {
