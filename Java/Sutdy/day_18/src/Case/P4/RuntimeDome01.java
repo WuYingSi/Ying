@@ -2,7 +2,7 @@ package Case.P4;
 
 import java.io.IOException;
 
-public class RuntimeDome {
+public class RuntimeDome01 {
     public static void main(String[] args) throws IOException {
         /*
             1. public static Runtime getRuntime() 当前系统的运行环境对象

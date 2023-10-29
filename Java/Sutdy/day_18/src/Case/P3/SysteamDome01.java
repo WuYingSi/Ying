@@ -1,6 +1,6 @@
 package Case.P3;
 
-public class SysteamDome {
+public class SysteamDome01 {
     public static void main(String[] args) {
         /*
         public static void exit (int status)      终止当前运行的Java虚拟机
