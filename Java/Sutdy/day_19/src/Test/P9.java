@@ -1,6 +1,6 @@
-package P9;
+package Test;
 
-public class RegexTest01 {
+public class P9 {
     public static void main(String[] args) {
         /* 假如现在要求校验一个qq号码是否正确。
             规则:6位及20位之内，0不能在开头，必须全部是数字。
