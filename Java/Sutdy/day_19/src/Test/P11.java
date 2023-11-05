@@ -52,7 +52,7 @@ public class P11 {
         //String regex02 = "(^\\d{8}(0\\d|10|11|12)([0-2]\\d|30|31)\\d{3}$)|(^\\d{6}(18|19|20)\\d{2}(0\\d|10|11|12)([0-2]\\d|30|31)\\d{3}(\\d|X|x)$)";
         String regex02="[1-9]\\d{5}(18|19|20)\\d{2}(0[1-9]|1[0-2])(0[1-9]|[12]\\d|3[01])\\d{3}[\\dXx]";
         System.out.println("445221200301126818".matches(regex02));
-        System.out.println("445221200301126818".matches(regex01));dwwuyingsihdalkhjjjkk4511dadddafadfwdwuhhkahkjhhhhhhhhhhhhdjdjakhddddd
+        System.out.println("445221200301126818".matches(regex01));
     }
 
 }
