@@ -2,7 +2,7 @@ package P17;
 
 import java.util.Calendar;
 
-public class CalendarGetDemo {
+public class A1_CalendarGetDemo {
     public static void main(String[] args) {
         //1.获取一个GregorianCalendar对象
         Calendar instance = Calendar.getInstance();//获取子类对象

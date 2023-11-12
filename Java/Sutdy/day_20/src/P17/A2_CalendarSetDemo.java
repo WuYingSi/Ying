@@ -2,7 +2,7 @@ package P17;
 
 import java.util.Calendar;
 
-public class CalendarSetDemo {
+public class A2_CalendarSetDemo {
     public static void main(String[] args) {
         //设置属性——set(int field,int value):
         Calendar c1 = Calendar.getInstance();//获取当前日期

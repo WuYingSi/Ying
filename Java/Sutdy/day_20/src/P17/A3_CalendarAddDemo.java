@@ -2,7 +2,7 @@ package P17;
 
 import java.util.Calendar;
 
-public class CalendarAddDemo {
+public class A3_CalendarAddDemo {
     public static void main(String[] args) {
         //计算200天以后是哪年哪月哪日，星期几？
         Calendar c2 = Calendar.getInstance();//获取当前日期

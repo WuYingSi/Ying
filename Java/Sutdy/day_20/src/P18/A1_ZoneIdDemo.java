@@ -3,7 +3,7 @@ package P18;
 import java.time.ZoneId;
 import java.util.Set;
 
-public class ZoneIdDemo {
+public class A1_ZoneIdDemo {
     public static void main(String[] args) {
         /*
         static Set<string> getAvailableZoneIds() 获取Java中支持的所有时区
