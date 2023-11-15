@@ -9,7 +9,7 @@ public class A3_FeiBoSearchDemo {
         int[] arr = {1, 8, 10, 89, 1000, 1234};
         System.out.println(search(arr, 1234));
     }
-
+    // 获取斐波那契数
     public static int[] getFeiBo() {
         int[] arr = new int[maxSize];
         arr[0] = 1;
