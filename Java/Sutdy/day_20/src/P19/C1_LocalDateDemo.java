@@ -1,4 +1,4 @@
-package P18;
+package P19;
 
 import java.time.DayOfWeek;
 import java.time.LocalDate;
@@ -22,7 +22,7 @@ public class C1_LocalDateDemo {
         //获取月//方式一:
         Month m = ldDate.getMonth();
         System.out.println(m);
-        System.out.println(((Month) m).getValue());
+        System.out.println(m.getValue());
 
         //方式二:
         int month = ldDate.getMonthValue();

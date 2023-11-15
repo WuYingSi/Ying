@@ -1,4 +1,4 @@
-package P18;
+package P19;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -18,17 +18,17 @@ public class C3_LocalDateTimeDemo {
         System.out.println(nowDateTime.getSecond());//秒
         System.out.println(nowDateTime.getNano());//纳秒
         // 日:当年的第几天
-        System.out.println("dayofYear:" + nowDateTime.getDayOfYear());
+        System.out.println("DayOfYear:" + nowDateTime.getDayOfYear());
         //星期
         System.out.println(nowDateTime.getDayOfWeek());
         System.out.println(nowDateTime.getDayOfWeek().getValue());
         //月份
         System.out.println(nowDateTime.getMonth());
         System.out.println(nowDateTime.getMonth().getValue());
-
+        // 转换成LocalDate对象
         LocalDate ld = nowDateTime.toLocalDate();
         System.out.println(ld);
-
+        // 转换成LocalTime对象
         LocalTime lt = nowDateTime.toLocalTime();
         System.out.println(lt.getHour());
         System.out.println(lt.getMinute());
