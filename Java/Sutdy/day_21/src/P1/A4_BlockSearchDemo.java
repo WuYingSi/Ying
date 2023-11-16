@@ -50,8 +50,8 @@ public class A4_BlockSearchDemo {
         // Block b1 = new Block(21,0,5);   ----  0
         // Block b2 = new Block(45,6,11);  ----  1
         // Block b3 = new Block(73,12,17); ----  2
-        int startIndex = blockArr[indexBlock].getStartIndex();
-        int endIndex = blockArr[indexBlock].getEndIndex();
+        int startIndex = blockArr[indexBlock].getStartIndex();// 起始索引
+        int endIndex = blockArr[indexBlock].getEndIndex();// 结束索引
 
         //3.遍历
         for (int i = startIndex; i <= endIndex; i++) {
@@ -66,9 +66,9 @@ public class A4_BlockSearchDemo {
     //定义一个方法，用来确定number在哪一块当中
     public static int findIndexBlock(Block[] blockArr, int number) { //100
 
-
         //从0索引开始遍历blockArr，如果number小于max，那么就表示number是在这一块当中的
         for (int i = 0; i < blockArr.length; i++) {
+            // 获取number是否在块内：即比块内的最大值小
             if (number <= blockArr[i].getMax()) {
                 return i;
             }
