@@ -11,7 +11,8 @@ public class A4_BlockSearchDemo {
                 2.先查找blockArr确定要查找的数据属于哪一块
                 3.再单独遍历这一块数据即可
         */
-        int[] arr = {16, 5, 9, 12, 21, 18,
+        int[] arr = {
+                16, 5, 9, 12, 21, 18,
                 32, 23, 37, 26, 45, 34,
                 50, 48, 61, 52, 73, 66};
 
@@ -76,78 +77,78 @@ public class A4_BlockSearchDemo {
     }
 
 
+    public static class Block {
+        private int max;//最大值
+        private int startIndex;//起始索引
+        private int endIndex;//结束索引
+
+
+        public Block() {
+        }
+
+        public Block(int max, int startIndex, int endIndex) {
+            this.max = max;
+            this.startIndex = startIndex;
+            this.endIndex = endIndex;
+        }
+
+        /**
+         * 获取
+         *
+         * @return max
+         */
+        public int getMax() {
+            return max;
+        }
+
+        /**
+         * 设置
+         *
+         * @param max
+         */
+        public void setMax(int max) {
+            this.max = max;
+        }
+
+        /**
+         * 获取
+         *
+         * @return startIndex
+         */
+        public int getStartIndex() {
+            return startIndex;
+        }
+
+        /**
+         * 设置
+         *
+         * @param startIndex
+         */
+        public void setStartIndex(int startIndex) {
+            this.startIndex = startIndex;
+        }
+
+        /**
+         * 获取
+         *
+         * @return endIndex
+         */
+        public int getEndIndex() {
+            return endIndex;
+        }
+
+        /**
+         * 设置
+         *
+         * @param endIndex
+         */
+        public void setEndIndex(int endIndex) {
+            this.endIndex = endIndex;
+        }
+
+        public String toString() {
+            return "Block{max = " + max + ", startIndex = " + startIndex + ", endIndex = " + endIndex + "}";
+        }
+    }
 }
 
-class Block {
-    private int max;//最大值
-    private int startIndex;//起始索引
-    private int endIndex;//结束索引
-
-
-    public Block() {
-    }
-
-    public Block(int max, int startIndex, int endIndex) {
-        this.max = max;
-        this.startIndex = startIndex;
-        this.endIndex = endIndex;
-    }
-
-    /**
-     * 获取
-     *
-     * @return max
-     */
-    public int getMax() {
-        return max;
-    }
-
-    /**
-     * 设置
-     *
-     * @param max
-     */
-    public void setMax(int max) {
-        this.max = max;
-    }
-
-    /**
-     * 获取
-     *
-     * @return startIndex
-     */
-    public int getStartIndex() {
-        return startIndex;
-    }
-
-    /**
-     * 设置
-     *
-     * @param startIndex
-     */
-    public void setStartIndex(int startIndex) {
-        this.startIndex = startIndex;
-    }
-
-    /**
-     * 获取
-     *
-     * @return endIndex
-     */
-    public int getEndIndex() {
-        return endIndex;
-    }
-
-    /**
-     * 设置
-     *
-     * @param endIndex
-     */
-    public void setEndIndex(int endIndex) {
-        this.endIndex = endIndex;
-    }
-
-    public String toString() {
-        return "Block{max = " + max + ", startIndex = " + startIndex + ", endIndex = " + endIndex + "}";
-    }
-}
