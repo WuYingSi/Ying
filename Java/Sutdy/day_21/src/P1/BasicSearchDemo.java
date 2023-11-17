@@ -1,6 +1,6 @@
 package P1;
 
-public class A1_BasicSearchDemo {
+public class BasicSearchDemo {
     public static void main(String[] args) {
         //基本查找/顺序查找
         //核心：

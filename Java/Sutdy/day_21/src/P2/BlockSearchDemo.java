@@ -1,6 +1,6 @@
-package P1;
+package P2;
 
-public class A4_BlockSearchDemo {
+public class BlockSearchDemo {
     public static void main(String[] args) {
         /*
             分块查找

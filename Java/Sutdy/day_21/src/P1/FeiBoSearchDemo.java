@@ -2,7 +2,7 @@ package P1;
 
 import java.util.Arrays;
 
-public class A3_FeiBoSearchDemo {
+public class FeiBoSearchDemo {
     public static int maxSize = 20;
 
     public static void main(String[] args) {

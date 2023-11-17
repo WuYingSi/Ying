@@ -1,6 +1,6 @@
 package P1;
 
-public class A2_BinarySearchDemo {
+public class BinarySearchDemo {
     public static void main(String[] args) {
         //二分查找/折半查找
         //核心：
