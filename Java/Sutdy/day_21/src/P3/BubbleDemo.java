@@ -1,6 +1,6 @@
 package P3;
 
-public class A1_BubbleDemo {
+public class BubbleDemo {
     public static void main(String[] args) {
         /*
             冒泡排序：
