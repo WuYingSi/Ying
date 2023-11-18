@@ -12,27 +12,29 @@ public class InsertDemo {
         int[] arr = {3, 44, 38, 5, 47, 15, 36, 26, 27, 2, 46, 4, 19, 50, 48};
 
         //1.找到无序的哪一组数组是从哪个索引开始的。  2
-        int startIndex = -1;
+        int startIndex = -1;// 即从第一个索引开始
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] > arr[i + 1]) {
+                // i=1:即有序的数组到1索引
+                // 无序的数组就从2索引开始
                 startIndex = i + 1;
                 break;
             }
         }
 
-        //2.遍历从startIndex开始到最后一个元素，依次得到无序的哪一组数据中的每一个元素
+        //2.遍历从startIndex开始到最后一个元素，依次得到无序的数据中的每一个元素
         for (int i = startIndex; i < arr.length; i++) {
             //问题：如何把遍历到的数据，插入到前面有序的这一组当中
 
             //记录当前要插入数据的索引
             int j = i;
-
+            // 从有序中的最大索引开始比较
             while (j > 0 && arr[j] < arr[j - 1]) {
                 //交换位置
                 int temp = arr[j];
                 arr[j] = arr[j - 1];
                 arr[j - 1] = temp;
-                j--;
+                j--;// 再次与前面的数据进行判断
             }
 
         }
