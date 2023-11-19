@@ -4,8 +4,8 @@ import java.util.Arrays;
 
 public class QuickSortDemo {
     public static void main(String[] args) {
-        System.out.println(Integer.MAX_VALUE);
-        System.out.println(Integer.MIN_VALUE);
+//        System.out.println(Integer.MAX_VALUE);
+//        System.out.println(Integer.MIN_VALUE);
       /*
         快速排序：
             第一轮：以0索引的数字为基准数，确定基准数在数组中正确的位置。
@@ -13,8 +13,7 @@ public class QuickSortDemo {
             后面以此类推。
       */
 
-        int[] arr = {1,1, 6, 2, 7, 9, 3, 4, 5, 1,10, 8};
-
+        int[] arr = {1, 1, 6, 2, 7, 9, 3, 4, 5, 1, 10, 8};
 
         //int[] arr = new int[1000000];
 
@@ -24,20 +23,20 @@ public class QuickSortDemo {
         }*/
 
 
-        long start = System.currentTimeMillis();
+//        long start = System.currentTimeMillis();
         quickSort(arr, 0, arr.length - 1);
-        long end = System.currentTimeMillis();
-
-        System.out.println(end - start);//149
-
-        System.out.println(Arrays.toString(arr));
+//        long end = System.currentTimeMillis();
+//
+//        System.out.println(end - start);//149
+//
+//        System.out.println(Arrays.toString(arr));
         //课堂练习：
         //我们可以利用相同的办法去测试一下，选择排序，冒泡排序以及插入排序运行的效率
         //得到一个结论：快速排序真的非常快。
 
-       /* for (int i = 0; i < arr.length; i++) {
+        for (int i = 0; i < arr.length; i++) {
             System.out.print(arr[i] + " ");
-        }*/
+        }
 
     }
 
@@ -52,36 +51,30 @@ public class QuickSortDemo {
         int start = i;
         int end = j;
 
-        if(start > end){
+        if (start > end) {
             //递归的出口
-            return;
+            return ;
         }
-
-
 
         //记录基准数
         int baseNumber = arr[i];
         //利用循环找到要交换的数字
-        while(start != end){
+        while (start != end) {
             //利用end，从后往前开始找，找比基准数小的数字
             //int[] arr = {1, 6, 2, 7, 9, 3, 4, 5, 10, 8};
-            while(true){
-                if(end <= start || arr[end] < baseNumber){
+            while (true) {
+                if (end <= start || arr[end] < baseNumber) {
                     break;
                 }
                 end--;
             }
-            System.out.println(end);
             //利用start，从前往后找，找比基准数大的数字
-            while(true){
-                if(end <= start || arr[start] > baseNumber){
+            while (true) {
+                if (end <= start || arr[start] > baseNumber) {
                     break;
                 }
                 start++;
             }
-
-
-
             //把end和start指向的元素进行交换
             int temp = arr[start];
             arr[start] = arr[end];
@@ -97,9 +90,9 @@ public class QuickSortDemo {
         arr[start] = temp;
 
         //确定6左边的范围，重复刚刚所做的事情
-        quickSort(arr,i,start - 1);
+        quickSort(arr, i, start - 1);
         //确定6右边的范围，重复刚刚所做的事情
-        quickSort(arr,start + 1,j);
+        quickSort(arr, start + 1, j);
 
     }
 }
