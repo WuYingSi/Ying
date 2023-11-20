@@ -4,8 +4,8 @@ import java.util.Arrays;
 
 public class QuickSortDemo {
     public static void main(String[] args) {
-//        System.out.println(Integer.MAX_VALUE);
-//        System.out.println(Integer.MIN_VALUE);
+        System.out.println(Integer.MAX_VALUE);
+        System.out.println(Integer.MIN_VALUE);
       /*
         快速排序：
             第一轮：以0索引的数字为基准数，确定基准数在数组中正确的位置。
@@ -22,13 +22,12 @@ public class QuickSortDemo {
             arr[i] = r.nextInt();
         }*/
 
-
-//        long start = System.currentTimeMillis();
+        // 查看快速排序所需的时间
+        long start = System.currentTimeMillis();
         quickSort(arr, 0, arr.length - 1);
-//        long end = System.currentTimeMillis();
-//
-//        System.out.println(end - start);//149
-//
+        long end = System.currentTimeMillis();
+        System.out.println(end - start);//149
+
 //        System.out.println(Arrays.toString(arr));
         //课堂练习：
         //我们可以利用相同的办法去测试一下，选择排序，冒泡排序以及插入排序运行的效率
@@ -53,7 +52,7 @@ public class QuickSortDemo {
 
         if (start > end) {
             //递归的出口
-            return ;
+            return;
         }
 
         //记录基准数
@@ -93,6 +92,5 @@ public class QuickSortDemo {
         quickSort(arr, i, start - 1);
         //确定6右边的范围，重复刚刚所做的事情
         quickSort(arr, start + 1, j);
-
     }
 }
